@@ -11,7 +11,7 @@ namespace AccesoDatos
         private readonly string connectionString;
         public ConnectionToSql()
         {
-            connectionString = "server=LEGION-DRHR ; database=swzicca ; INTEGRATED SECURITY = true";
+            connectionString = "Server=mi3-wsq4.my-hosting-panel.com;Database=swbdzicca;User Id=swbdzicca;Password=cg7y1&Q71;";
         }
         protected SqlConnection GetConnection()
         {
