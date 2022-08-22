@@ -11,7 +11,7 @@ namespace AccesoDatos
         private readonly string connectionString;
         public ConnectionToSql()
         {
-            connectionString = "server=DESKTOP-25FAVIP\\SQLEXPRESS ; database=SWZICCA ; INTEGRATED SECURITY = true";
+            connectionString = "server=LEGION-DRHR ; database=swzicca ; INTEGRATED SECURITY = true";
         }
         protected SqlConnection GetConnection()
         {

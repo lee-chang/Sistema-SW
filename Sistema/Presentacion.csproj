@@ -66,11 +66,41 @@
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\FamiliaModelo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\FamiliaModelo.Designer.cs">
+      <DependentUpon>FamiliaModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Horma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Horma.Designer.cs">
+      <DependentUpon>Horma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Modelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Modelo.Designer.cs">
+      <DependentUpon>Modelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PuntaModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PuntaModelo.Designer.cs">
+      <DependentUpon>PuntaModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubfamiliaModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubfamiliaModelo.Designer.cs">
+      <DependentUpon>SubfamiliaModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TacoModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TacoModelo.Designer.cs">
+      <DependentUpon>TacoModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -90,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FamiliaModelo.resx">
+      <DependentUpon>FamiliaModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Modelo.resx">
+      <DependentUpon>Modelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

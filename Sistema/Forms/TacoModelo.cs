@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema.Forms
 {
-    public partial class Form1 : Form
+    public partial class TacoModelo : Form
     {
-        public Form1()
+        public TacoModelo()
         {
             InitializeComponent();
         }

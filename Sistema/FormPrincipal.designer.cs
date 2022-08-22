@@ -63,6 +63,7 @@
             this.subfamiliaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoPuntaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoTacoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hormaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContenedor.SuspendLayout();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -454,7 +455,7 @@
             this.MenuProduccion.MenuItemTextColor = System.Drawing.Color.Empty;
             this.MenuProduccion.Name = "MenuProduccion";
             this.MenuProduccion.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuProduccion.Size = new System.Drawing.Size(129, 26);
+            this.MenuProduccion.Size = new System.Drawing.Size(181, 48);
             // 
             // productoToolStripMenuItem
             // 
@@ -462,14 +463,14 @@
             this.nuevoToolStripMenuItem,
             this.modelosToolStripMenuItem});
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productoToolStripMenuItem.Text = "Productos";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo Producto";
             // 
             // modelosToolStripMenuItem
@@ -479,40 +480,49 @@
             this.familiaModeloToolStripMenuItem,
             this.subfamiliaToolStripMenuItem,
             this.tipoPuntaToolStripMenuItem,
-            this.tipoTacoToolStripMenuItem});
+            this.tipoTacoToolStripMenuItem,
+            this.hormaToolStripMenuItem});
             this.modelosToolStripMenuItem.Name = "modelosToolStripMenuItem";
-            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modelosToolStripMenuItem.Text = "Modelos";
             // 
             // nuevoModeloToolStripMenuItem
             // 
             this.nuevoModeloToolStripMenuItem.Name = "nuevoModeloToolStripMenuItem";
-            this.nuevoModeloToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.nuevoModeloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoModeloToolStripMenuItem.Text = "Nuevo Modelo";
+            this.nuevoModeloToolStripMenuItem.Click += new System.EventHandler(this.nuevoModeloToolStripMenuItem_Click);
             // 
             // familiaModeloToolStripMenuItem
             // 
             this.familiaModeloToolStripMenuItem.Name = "familiaModeloToolStripMenuItem";
-            this.familiaModeloToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.familiaModeloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.familiaModeloToolStripMenuItem.Text = "Familia";
+            this.familiaModeloToolStripMenuItem.Click += new System.EventHandler(this.familiaModeloToolStripMenuItem_Click);
             // 
             // subfamiliaToolStripMenuItem
             // 
             this.subfamiliaToolStripMenuItem.Name = "subfamiliaToolStripMenuItem";
-            this.subfamiliaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.subfamiliaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.subfamiliaToolStripMenuItem.Text = "Subfamilia";
             // 
             // tipoPuntaToolStripMenuItem
             // 
             this.tipoPuntaToolStripMenuItem.Name = "tipoPuntaToolStripMenuItem";
-            this.tipoPuntaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.tipoPuntaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoPuntaToolStripMenuItem.Text = "Tipo Punta";
             // 
             // tipoTacoToolStripMenuItem
             // 
             this.tipoTacoToolStripMenuItem.Name = "tipoTacoToolStripMenuItem";
-            this.tipoTacoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.tipoTacoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoTacoToolStripMenuItem.Text = "Tipo Taco";
+            // 
+            // hormaToolStripMenuItem
+            // 
+            this.hormaToolStripMenuItem.Name = "hormaToolStripMenuItem";
+            this.hormaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hormaToolStripMenuItem.Text = "Horma";
             // 
             // FormPrincipal
             // 
@@ -580,6 +590,7 @@
         private System.Windows.Forms.ToolStripMenuItem subfamiliaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoPuntaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoTacoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hormaToolStripMenuItem;
     }
 }
 
