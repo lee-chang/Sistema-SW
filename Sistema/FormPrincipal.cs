@@ -176,6 +176,7 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new Sistema.Forms.Cliente());
         }
 
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
