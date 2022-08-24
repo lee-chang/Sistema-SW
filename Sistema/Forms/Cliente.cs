@@ -17,8 +17,10 @@ namespace Sistema.Forms
         NDepartamento ndep = new NDepartamento();
         NProvincia nprov = new NProvincia();
         NDistrito ndist = new NDistrito();
+        NTipoIden ntipoiden = new NTipoIden();
 
         string depid;
+        string tipoideid, tipoidenid;
         string r;
 
         string deid, proid;
@@ -46,6 +48,13 @@ namespace Sistema.Forms
             comboBox4.DataSource = ndist.listaDistrito(provid);
         }
 
+        public void CargarTipoIdentificacion()
+        {
+            cbxtipoid.DisplayMember = "Descripcion";
+            cbxtipoid.ValueMember = "TipoIdentidadID";
+            cbxtipoid.DataSource = ntipoiden.listaTipoIden(tipoidenid);
+        }
+
         public Cliente()
         {
             InitializeComponent();
@@ -67,6 +76,7 @@ namespace Sistema.Forms
         private void Cliente_Load(object sender, EventArgs e)
         {
             CargarDepartamento();
+            CargarTipoIdentificacion();
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +84,13 @@ namespace Sistema.Forms
             r = comboBox3.SelectedValue.ToString();
             proid = r;
             CargarDistrito(proid);
+        }
+
+        private void cbxtipoid_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tipoideid = cbxtipoid.SelectedValue.ToString();
+            tipoidenid = tipoideid;
+            CargarProvincia(tipoidenid);
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)

@@ -7,15 +7,15 @@ using System.Data;
 
 namespace Dominio
 {
-    public class NDepartamento
+    public class NTipoIden
     {
 
-        DDepartamento ndep = new DDepartamento();
+        DTipoIden ntipoiden = new DTipoIden();
 
         //listar
-        public DataTable listaDepartamento()
+        public DataTable listaTipoIden(string tipoidenid)
         {
-            return ndep.listaDepartamento();
+            return ntipoiden.listaTipoIden();
         }
     }
 }

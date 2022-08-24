@@ -41,12 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DCliente.cs" />
     <Compile Include="DDepartamento.cs" />
     <Compile Include="DDistrito.cs" />
     <Compile Include="DProvincia.cs" />
+    <Compile Include="DTipoIden.cs" />
+    <Compile Include="ECliente.cs" />
+    <Compile Include="EDepartamento.cs" />
+    <Compile Include="EDistrito.cs" />
+    <Compile Include="EProvincia.cs" />
+    <Compile Include="ETipoIden.cs" />
     <Compile Include="NDepartamento.cs" />
     <Compile Include="NDistrito.cs" />
     <Compile Include="NProvincia.cs" />
+    <Compile Include="NTipoIden.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
