@@ -179,6 +179,7 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             OpenChildForm(new Sistema.Forms.Cliente());
         }
 
+
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
@@ -212,6 +213,25 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
         private void familiaModeloToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Sistema.Forms.FamiliaModelo());
+        }
+        private void hormaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuProduccion_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void hormaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Forms.Horma());
         }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL

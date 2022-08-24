@@ -16,5 +16,54 @@ namespace Sistema.Forms
         {
             InitializeComponent();
         }
+
+        private void DGVHorma_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Horma_Load(object sender, EventArgs e)
+        {
+            FillGrid();
+        }
+
+        private void FillGrid()
+        {
+            try
+            {
+                FHorma objFHorma = new FHorma();
+                DGVHorma.DataSource = objFHorma.ListarHorma();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void LimpiarForm()
+        {
+            txthorma.Text = "";
+            txtdeshorma.Text = "";
+            txthorma.Focus();
+        }
+
+        private void RegistrarHorma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FHorma objFHorma = new FHorma();
+                objFHorma.FidHorma = txthorma.Text;
+                objFHorma.FdescripcionHorma = txtdeshorma.Text;
+                objFHorma.RegistrarHorma();
+                MessageBox.Show("Proveedor Registrado ");
+                LimpiarForm();
+                FillGrid();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
