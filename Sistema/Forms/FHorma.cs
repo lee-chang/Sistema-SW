@@ -14,7 +14,7 @@ namespace Sistema.Forms
         private String idHorma, descripcionHorma;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "Data Source=DESKTOP-25FAVIP\\SQLEXPRESS;Initial Catalog=SWZICCA;Integrated Security=true;";
+        private String Cadenaconex = "SERVER=DESKTOP-DS840MB;DATABASE=swzicca;Integrated Security=SSPI;";
         public FHorma()
         {
             conn = new SqlConnection(Cadenaconex);
@@ -47,8 +47,8 @@ namespace Sistema.Forms
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.AddWithValue("@pidhorma", idHorma);
-                cmd.Parameters.AddWithValue("@pdescripcionhorma", descripcionHorma);
+                cmd.Parameters.AddWithValue("@IDHORMA", idHorma);
+                cmd.Parameters.AddWithValue("@DESCRIPCIONHORMA", descripcionHorma);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -68,8 +68,8 @@ namespace Sistema.Forms
                 conn.Open();
                 cmd = new SqlCommand("SP_ACTUALIZAHORMA", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pidhorma", idHorma);
-                cmd.Parameters.AddWithValue("@pdescripcionhorma", descripcionHorma);
+                cmd.Parameters.AddWithValue("@idhorma", idHorma);
+                cmd.Parameters.AddWithValue("@descripcionhorma", descripcionHorma);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -91,7 +91,7 @@ namespace Sistema.Forms
                 cmd = new SqlCommand("SP_BUSCAHORMA", conn);
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pidhorma", idHorma);
+                cmd.Parameters.AddWithValue("@idhorma", idHorma);
 
                 dr = cmd.ExecuteReader();
                 if (!dr.HasRows)
@@ -115,7 +115,7 @@ namespace Sistema.Forms
             }
         }
 
-      /*  public DataTable ListarHorma()
+        public DataTable ListarHorma()
         {
             try
             {
@@ -130,14 +130,13 @@ namespace Sistema.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
                 conn.Close();
-
             }
-        }*/
+        }
     }
 
 }
