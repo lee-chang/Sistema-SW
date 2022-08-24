@@ -24,7 +24,7 @@ namespace Sistema.Forms
                 FPuntaModelo objFPuntaModelo = new FPuntaModelo();
                 objFPuntaModelo.FidPunta = txtpunta.Text;
                 objFPuntaModelo.BuscarPunta();
-                txtpunta.Text = objFPuntaModelo.FdesPunta;
+                txtdespunta.Text = objFPuntaModelo.FdesPunta;
             }
             catch (Exception ex)
             {
