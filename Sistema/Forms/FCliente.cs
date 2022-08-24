@@ -6,56 +6,83 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-
+using System.Configuration;
 
 namespace Sistema
 {
     class FCliente
     {
-        private String idCliente, apelCliente, nombCliente, dirCliente, tipCliente;
+        private String cliID, nombCli, apellCli, dirCli, tipoidenid,nroidenCli,emailCli,telfCli,depID,provid,distid;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "server=DESKTOP-25FAVIP\\SQLEXPRESS;database=SWZICCA;Integrated Security=true;";
+        string cadenaConexion = "server=DESKTOP-25FAVIP\\SQLEXPRESS;database=SWZICCA;Integrated Security = true;";
         public FCliente()
         {
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(cadenaConexion);
         }
-        public FCliente(String tid, String tapel, String tnombre, String tdir, String ttip)
+        public FCliente(String tid,String tnombre, String tapell, String tdir, String ttipiden, String tnroiden, string temail, string ttelf,string tdepid, string tprovid, string tdistid)
         {
-            this.idCliente = tid;
-            this.apelCliente = tapel;
-            this.nombCliente = tnombre;
-            this.dirCliente = tdir;
-            this.dirCliente = ttip;
-            conn = new SqlConnection(Cadenaconex);
+            this.cliID = tid;
+            this.apellCli = tapell;
+            this.nombCli = tnombre;
+            this.dirCli = tdir;
+            this.tipoidenid = ttipiden;
+            this.nroidenCli = tnroiden;
+            this.emailCli = temail;
+            this.telfCli = ttelf;
+            this.depID = tdepid;
+            this.provid = tprovid;
+            this.distid = tdistid;
+
+            conn = new SqlConnection(cadenaConexion);
         }
         public String FidCliente
         {
-            get { return this.idCliente; }
-            set { this.idCliente = value; }
+            get { return this.cliID; }
+            set { this.cliID = value; }
         }
         public String FapelCliente
         {
-            get { return this.apelCliente; }
-            set { this.apelCliente = value; }
+            get { return this.apellCli; }
+            set { this.apellCli = value; }
         }
 
         public String FnombCliente
         {
-            get { return this.nombCliente; }
-            set { this.nombCliente = value; }
+            get { return this.nombCli; }
+            set { this.nombCli = value; }
         }
 
         public String FdirCliente
         {
-            get { return this.dirCliente; }
-            set { this.dirCliente = value; }
+            get { return this.dirCli; }
+            set { this.dirCli = value; }
         }
-        public String FtipCliente
+        public String FtipoidenId
         {
-            get { return this.tipCliente; }
-            set { this.tipCliente = value; }
+            get { return this.tipoidenid; }
+            set { this.tipoidenid = value; }
         }
+
+        public String FnroidenCliente
+        {
+            get { return this.nroidenCli; }
+            set { this.nroidenCli = value; }
+        }
+
+        public String FtelfCliente
+        {
+            get { return this.telfCli; }
+            set { this.telfCli = value; }
+        }
+
+        public String FemailCLiente
+        {
+            get { return this.emailCli; }
+            set { this.emailCli = value; }
+        }
+
+
 
         public void RegistrarCliente()
         {
@@ -167,7 +194,6 @@ namespace Sistema
                 conn.Close();
             }
         }
-
     }
 }
-
+   

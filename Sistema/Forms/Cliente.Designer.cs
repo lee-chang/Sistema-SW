@@ -54,7 +54,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.txtdirr = new System.Windows.Forms.TextBox();
+            this.txtdir = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCliente)).BeginInit();
@@ -314,13 +314,13 @@
             this.comboBox4.TabIndex = 28;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
-            // txtdirr
+            // txtdir
             // 
-            this.txtdirr.Location = new System.Drawing.Point(214, 368);
-            this.txtdirr.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.txtdirr.Name = "txtdirr";
-            this.txtdirr.Size = new System.Drawing.Size(605, 25);
-            this.txtdirr.TabIndex = 30;
+            this.txtdir.Location = new System.Drawing.Point(214, 368);
+            this.txtdir.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.txtdir.Name = "txtdir";
+            this.txtdir.Size = new System.Drawing.Size(605, 25);
+            this.txtdir.TabIndex = 30;
             // 
             // label11
             // 
@@ -339,7 +339,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(890, 661);
-            this.Controls.Add(this.txtdirr);
+            this.Controls.Add(this.txtdir);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label10);
@@ -405,7 +405,7 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.TextBox txtdirr;
+        private System.Windows.Forms.TextBox txtdir;
         private System.Windows.Forms.Label label11;
     }
 }
