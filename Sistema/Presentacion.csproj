@@ -76,6 +76,7 @@
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FCliente.cs" />
+    <Compile Include="Forms\FPuntaModelo.cs" />
     <Compile Include="Forms\FTacoModelo.cs" />
     <Compile Include="Forms\FHorma.cs" />
     <Compile Include="Forms\Horma.cs">
@@ -135,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modelo.resx">
       <DependentUpon>Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PuntaModelo.resx">
+      <DependentUpon>PuntaModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TacoModelo.resx">
       <DependentUpon>TacoModelo.cs</DependentUpon>

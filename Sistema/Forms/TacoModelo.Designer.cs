@@ -67,6 +67,7 @@
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 13;
             this.label2.Text = "Descripcion Taco";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -76,6 +77,7 @@
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "Codigo Taco";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnregistrartaco
             // 
@@ -102,6 +104,7 @@
             this.txtdestaco.Name = "txtdestaco";
             this.txtdestaco.Size = new System.Drawing.Size(259, 20);
             this.txtdestaco.TabIndex = 9;
+            this.txtdestaco.TextChanged += new System.EventHandler(this.txtdestaco_TextChanged);
             // 
             // txttaco
             // 
