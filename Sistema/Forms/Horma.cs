@@ -55,7 +55,7 @@ namespace Sistema.Forms
                 objFHorma.FidHorma = txthorma.Text;
                 objFHorma.FdescripcionHorma = txtdeshorma.Text;
                 objFHorma.RegistrarHorma();
-                MessageBox.Show("Proveedor Registrado ");
+                MessageBox.Show("Horma Registrada ");
                 LimpiarForm();
                 FillGrid();
             }

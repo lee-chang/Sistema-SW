@@ -76,6 +76,7 @@
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FCliente.cs" />
+    <Compile Include="Forms\FTacoModelo.cs" />
     <Compile Include="Forms\FHorma.cs" />
     <Compile Include="Forms\Horma.cs">
       <SubType>Form</SubType>
@@ -134,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modelo.resx">
       <DependentUpon>Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TacoModelo.resx">
+      <DependentUpon>TacoModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

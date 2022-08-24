@@ -527,6 +527,7 @@
             this.tipoTacoToolStripMenuItem.Name = "tipoTacoToolStripMenuItem";
             this.tipoTacoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoTacoToolStripMenuItem.Text = "Tipo Taco";
+            this.tipoTacoToolStripMenuItem.Click += new System.EventHandler(this.tipoTacoToolStripMenuItem_Click);
             // 
             // hormaToolStripMenuItem
             // 
