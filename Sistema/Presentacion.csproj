@@ -66,6 +66,9 @@
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EDepartamento.cs" />
+    <Compile Include="Forms\EDistrito.cs" />
+    <Compile Include="Forms\EProvincia.cs" />
     <Compile Include="Forms\FamiliaModelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +143,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Forms\App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

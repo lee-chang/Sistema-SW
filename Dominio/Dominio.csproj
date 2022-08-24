@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DDepartamento.cs" />
+    <Compile Include="DDistrito.cs" />
+    <Compile Include="DProvincia.cs" />
+    <Compile Include="NDepartamento.cs" />
+    <Compile Include="NDistrito.cs" />
+    <Compile Include="NProvincia.cs" />
     <Compile Include="UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
