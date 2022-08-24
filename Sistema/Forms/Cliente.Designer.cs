@@ -123,6 +123,7 @@
             this.cbxtipoid.Name = "cbxtipoid";
             this.cbxtipoid.Size = new System.Drawing.Size(117, 28);
             this.cbxtipoid.TabIndex = 7;
+            this.cbxtipoid.SelectedIndexChanged += new System.EventHandler(this.cbxtipoid_SelectedIndexChanged);
             // 
             // label2
             // 
