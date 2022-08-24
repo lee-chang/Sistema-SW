@@ -32,7 +32,7 @@ namespace Sistema.Forms
             try
             {
                 FHorma objFHorma = new FHorma();
-        //        DGVHorma.DataSource = objFHorma.ListarHorma();
+               DGVHorma.DataSource = objFHorma.ListarHorma();
             }
             catch (Exception ex)
             {
@@ -55,9 +55,44 @@ namespace Sistema.Forms
                 objFHorma.FidHorma = txthorma.Text;
                 objFHorma.FdescripcionHorma = txtdeshorma.Text;
                 objFHorma.RegistrarHorma();
-                MessageBox.Show("Proveedor Registrado ");
+                MessageBox.Show("Horma Registrada ");
                 LimpiarForm();
                 FillGrid();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        private void btnactualizarhorma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FHorma objFHorma = new FHorma();
+                objFHorma.FidHorma = txthorma.Text;
+                objFHorma.FdescripcionHorma = txtdeshorma.Text;
+                objFHorma.ActualizarHorma();
+                MessageBox.Show("Datos Actualizados ");
+                LimpiarForm();
+                FillGrid();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        private void btnbuscarhorma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FHorma objHorma = new FHorma();
+                objHorma.FidHorma = txthorma.Text;
+                objHorma.BuscarHorma();
+                txtdeshorma.Text = objHorma.FdescripcionHorma;
             }
             catch (Exception ex)
             {

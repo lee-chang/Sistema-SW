@@ -9,46 +9,46 @@ using System.Windows.Forms;
 
 namespace Sistema.Forms
 {
-    internal class FHorma
+    internal class FTacoModelo
     {
-        private String idHorma, descripcionHorma;
+        private String idTaco, desTaco;
         private SqlConnection conn;
         private SqlCommand cmd;
         private String Cadenaconex = "SERVER=DESKTOP-DS840MB;DATABASE=swzicca;Integrated Security=SSPI;";
-        public FHorma()
+        public FTacoModelo()
         {
             conn = new SqlConnection(Cadenaconex);
         }
-        public FHorma(String tid, String tdescripcion)
+        public FTacoModelo(String tid, String tdescripcion)
         {
-            this.idHorma = tid;
-            this.descripcionHorma = tdescripcion;
+            this.idTaco = tid;
+            this.desTaco = tdescripcion;
 
             conn = new SqlConnection(Cadenaconex);
         }
-        public String FidHorma
+        public String FidTaco
         {
-            get { return this.idHorma; }
-            set { this.idHorma = value; }
+            get { return this.idTaco; }
+            set { this.idTaco = value; }
         }
 
-        public String FdescripcionHorma
+        public String FdesTaco
         {
-            get { return this.descripcionHorma; }
-            set { this.descripcionHorma = value; }
+            get { return this.desTaco; }
+            set { this.desTaco = value; }
         }
 
-        public void RegistrarHorma()
+        public void RegistrarTaco()
         {
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_INSERTAHORMA", conn)
+                cmd = new SqlCommand("SP_INSERTATACO", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.AddWithValue("@IDHORMA", idHorma);
-                cmd.Parameters.AddWithValue("@DESCRIPCIONHORMA", descripcionHorma);
+                cmd.Parameters.AddWithValue("@IDTACO", idTaco);
+                cmd.Parameters.AddWithValue("@DESTACO", desTaco);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -61,15 +61,15 @@ namespace Sistema.Forms
             }
         }
 
-        public void ActualizarHorma()
+        public void ActualizarTaco()
         {
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_ACTUALIZAHORMA", conn);
+                cmd = new SqlCommand("SP_ACTUALIZATACO", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idhorma", idHorma);
-                cmd.Parameters.AddWithValue("@descripcionhorma", descripcionHorma);
+                cmd.Parameters.AddWithValue("@IDTACO", idTaco);
+                cmd.Parameters.AddWithValue("@DESTACO", desTaco);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -82,26 +82,26 @@ namespace Sistema.Forms
             }
         }
 
-        public void BuscarHorma()
+        public void BuscarTaco()
         {
             try
             {
                 SqlDataReader dr;
                 conn.Open();
-                cmd = new SqlCommand("SP_BUSCAHORMA", conn);
+                cmd = new SqlCommand("SP_BUSCATACO", conn);
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idhorma", idHorma);
+                cmd.Parameters.AddWithValue("@IDTACO", idTaco);
 
                 dr = cmd.ExecuteReader();
                 if (!dr.HasRows)
                 {
-                    MessageBox.Show("Horma no Registrada !!");
+                    MessageBox.Show("Taco no Registrado !!");
                 }
                 while (dr.Read())
                 {
-                    idHorma = dr.GetString(0);
-                    descripcionHorma = dr.GetString(1);
+                    idTaco = dr.GetString(1);
+                    desTaco = dr.GetString(0);
                 }
 
             }
@@ -115,14 +115,14 @@ namespace Sistema.Forms
             }
         }
 
-        public DataTable ListarHorma()
+        public DataTable ListarTaco()
         {
             try
             {
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter();
                 conn.Open();
-                cmd = new SqlCommand("SP_LISTAHORMA", conn);
+                cmd = new SqlCommand("SP_LISTATACO", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 da = new SqlDataAdapter(cmd);
                 da.Fill(ds);
