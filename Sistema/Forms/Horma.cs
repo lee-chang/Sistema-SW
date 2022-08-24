@@ -32,7 +32,7 @@ namespace Sistema.Forms
             try
             {
                 FHorma objFHorma = new FHorma();
-                DGVHorma.DataSource = objFHorma.ListarHorma();
+        //        DGVHorma.DataSource = objFHorma.ListarHorma();
             }
             catch (Exception ex)
             {
