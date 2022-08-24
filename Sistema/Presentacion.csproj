@@ -72,6 +72,7 @@
     <Compile Include="Forms\FamiliaModelo.Designer.cs">
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FHorma.cs" />
     <Compile Include="Forms\Horma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FamiliaModelo.resx">
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Horma.resx">
+      <DependentUpon>Horma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modelo.resx">
       <DependentUpon>Modelo.cs</DependentUpon>
