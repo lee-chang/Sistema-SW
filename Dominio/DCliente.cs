@@ -46,7 +46,7 @@ namespace Dominio
                 cmd.Parameters.AddWithValue("@PDISTRITOID", ecli.Disid);
                // cmd.Parameters.AddWithValue("@PPROVINCIAID",);
                // cmd.Parameters.AddWithValue("@PDEPARTAMENTOID",);
-               //cmd.Parameters.AddWithValue("@PTIPOIDENTIDADID",);
+               cmd.Parameters.AddWithValue("@PTIPOIDENTIDADID",ecli.FtipoidenId);
                
                 //reconoce los datos de envio al procedimeinto almacenado
                 cmd.CommandType = CommandType.StoredProcedure;
