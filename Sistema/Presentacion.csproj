@@ -75,6 +75,7 @@
     <Compile Include="Forms\FamiliaModelo.Designer.cs">
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FCliente.cs" />
     <Compile Include="Forms\FHorma.cs" />
     <Compile Include="Forms\Horma.cs">
       <SubType>Form</SubType>

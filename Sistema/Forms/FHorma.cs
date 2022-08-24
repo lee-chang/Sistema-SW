@@ -14,7 +14,7 @@ namespace Sistema.Forms
         private String idHorma, descripcionHorma;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "Data Source=DESKTOP-25FAVIP\\SQLEXPRESS;Initial Catalog=SWZICCA;Integrated Security=true;I;";
+        private String Cadenaconex = "Data Source=DESKTOP-25FAVIP\\SQLEXPRESS;Initial Catalog=SWZICCA;Integrated Security=true;";
         public FHorma()
         {
             conn = new SqlConnection(Cadenaconex);
