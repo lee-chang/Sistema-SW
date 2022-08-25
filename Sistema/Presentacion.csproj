@@ -78,6 +78,7 @@
     <Compile Include="Forms\FamiliaModelo.Designer.cs">
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FModelo.cs" />
     <Compile Include="Forms\FFamiliaModelo.cs" />
     <Compile Include="Forms\FPuntaModelo.cs" />
     <Compile Include="Forms\FSubfamiliaModelo.cs" />
