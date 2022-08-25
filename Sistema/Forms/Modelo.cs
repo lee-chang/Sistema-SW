@@ -96,14 +96,14 @@ namespace Sistema.Forms
 
         public void CargarTaco()
         {            
-            comboBox5.DisplayMember = "TacoModID";
+            comboBox5.DisplayMember = "Descripcion";
             comboBox5.ValueMember = "TacoModID";
             comboBox5.DataSource = objFTacoModelo.ListarTaco();
         }
 
         public void CargarSubFam()
         { 
-            comboBox4.DisplayMember = "SubfamiliamodID";
+            comboBox4.DisplayMember = "Descripcion";
             comboBox4.ValueMember = "SubfamiliamodID";
             comboBox4.DataSource = objFSubfamiliaModelo.ListarSubfamiliaModelos();
         }
@@ -164,11 +164,11 @@ namespace Sistema.Forms
                 FModelo objFModelo = new FModelo();
                 objFModelo.FidModelo = txtmodelo.Text;
                 objFModelo.FdesModelo = txtdesmodelo.Text;
-                objFModelo.FidFam = comboBox1.Text;
-                objFModelo.FidHorma = comboBox2.Text;
-                objFModelo.FidPunta = comboBox3.Text;
-                objFModelo.FidSubfam = comboBox4.Text;
-                objFModelo.FidTaco = comboBox5.Text;
+                objFModelo.FidFam = comboBox1.SelectedValue.ToString();
+                objFModelo.FidHorma = comboBox2.SelectedValue.ToString();
+                objFModelo.FidPunta = comboBox3.SelectedValue.ToString();
+                objFModelo.FidSubfam = comboBox4.SelectedValue.ToString();
+                objFModelo.FidTaco = comboBox5.SelectedValue.ToString();
                 objFModelo.RegistrarModelo();
                 MessageBox.Show("Modelo Registrado");
                 LimpiarForm();
@@ -187,11 +187,11 @@ namespace Sistema.Forms
                 FModelo objFModelo = new FModelo();
                 objFModelo.FidModelo = txtmodelo.Text;
                 objFModelo.FdesModelo = txtdesmodelo.Text;
-                objFModelo.FidFam = comboBox1.Text;
-                objFModelo.FidHorma = comboBox2.Text;
-                objFModelo.FidPunta = comboBox3.Text;
-                objFModelo.FidSubfam = comboBox4.Text;
-                objFModelo.FidTaco = comboBox5.Text;
+                objFModelo.FidFam = comboBox1.SelectedValue.ToString();
+                objFModelo.FidHorma = comboBox2.SelectedValue.ToString();
+                objFModelo.FidPunta = comboBox3.SelectedValue.ToString();
+                objFModelo.FidSubfam = comboBox4.SelectedValue.ToString();
+                objFModelo.FidTaco = comboBox5.SelectedValue.ToString();
                 objFModelo.ActualizarModelo();
                 MessageBox.Show("Datos Actualizados ");
                 LimpiarForm();

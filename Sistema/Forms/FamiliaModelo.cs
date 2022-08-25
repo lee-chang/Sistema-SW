@@ -14,9 +14,7 @@ namespace Sistema.Forms
 {
     public partial class FamiliaModelo : Form
     {
-        NFamiliaModelo nfamod = new NFamiliaModelo();
-        EFamiliaModelo efamod = new EFamiliaModelo();
-
+        FFamiliaModelo objFFamiliamodelo = new FFamiliaModelo();
         public FamiliaModelo()
         {
             InitializeComponent();
@@ -63,7 +61,7 @@ namespace Sistema.Forms
                 objFamiliamodelo.FidFamiliamodelo = txtidFamiliamodelo.Text;
                 objFamiliamodelo.FDesFamiliamodelos = txtDesFamiliamodelos.Text;
                 objFamiliamodelo.RegistrarFamiliamodelo();
-                MessageBox.Show("Familiamodelo Registrado ");
+                MessageBox.Show("Familia Modelo Registrado ");
                 LimpiarForm();
                 FillGrid();
             }
@@ -96,8 +94,7 @@ namespace Sistema.Forms
         private void FamiliaModelo_Load(object sender, EventArgs e)
         {
             FillGrid();
-            DGVFamiliamodelo.DataSource = nfamod.listaFamiliaModelo();
-
+            DGVFamiliamodelo.DataSource = objFFamiliamodelo.ListarFamiliamodelos();
 
         }
         private void FillGrid()
