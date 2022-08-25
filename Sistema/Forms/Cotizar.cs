@@ -21,5 +21,20 @@ namespace Sistema.Forms
         {
 
         }
+
+        private void iconCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtclientid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

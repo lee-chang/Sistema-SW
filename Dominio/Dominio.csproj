@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DCliente.cs" />
+    <Compile Include="DCotizar.cs" />
     <Compile Include="DDepartamento.cs" />
     <Compile Include="DDistrito.cs" />
     <Compile Include="DProvincia.cs" />

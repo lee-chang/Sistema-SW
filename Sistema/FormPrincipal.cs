@@ -243,6 +243,11 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
         {
             OpenChildForm(new Sistema.Forms.PuntaModelo());
         }
+
+        private void cotizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Forms.Cotizar());
+        }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private Form activeForm = null;
