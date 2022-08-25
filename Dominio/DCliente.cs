@@ -10,13 +10,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Net.Sockets;
 using System.Windows;
+using AccesoDatos;
 
 namespace Dominio
 {
     class DCliente
     {
 
-        string cadenaConexion = "server=DESKTOP-25FAVIP\\SQLEXPRESS;database=SWZICCA;INTEGRATED SECURITY=true;";
+        ConnectionToSql conn= new ConnectionToSql();
 
         SqlConnection conexion;
         SqlCommand cmd;
@@ -29,7 +30,7 @@ namespace Dominio
         public int registrarCliente(ECliente ecli)
         {
             int insertado = 0;
-            conexion = new SqlConnection(cadenaConexion);
+            conexion = new SqlConnection(conn.CadenaConexion);
             try
             {
                 // abrir conexion
@@ -70,7 +71,7 @@ namespace Dominio
         public int actualizarCliente(ECliente ecli)
         {
             int actualizado = 0;
-            conexion = new SqlConnection(cadenaConexion);
+            conexion = new SqlConnection(conn.CadenaConexion);
             try
             {
                 // abrir conexion
@@ -112,7 +113,7 @@ namespace Dominio
         public int buscarCliente(ECliente ecli)
         {
             int buscar = 0;
-            conexion = new SqlConnection(cadenaConexion);
+            conexion = new SqlConnection(conn.CadenaConexion);
             try
             {
                 SqlDataReader dr;
@@ -165,7 +166,7 @@ namespace Dominio
         public DataTable listaCliente()
         {
             dt = new DataTable();
-            conexion = new SqlConnection(cadenaConexion);
+            conexion = new SqlConnection(conn.CadenaConexion);
             try
             {
                 conexion.Open();

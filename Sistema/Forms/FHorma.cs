@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using AccesoDatos;
 
 namespace Sistema.Forms
 {
     internal class FHorma
     {
+        ConnectionToSql Cadenaconex= new ConnectionToSql();
+
         private String idHorma, descripcionHorma;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "SERVER=DESKTOP-DS840MB;DATABASE=swzicca;Integrated Security=SSPI;";
         public FHorma()
         {
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public FHorma(String tid, String tdescripcion)
         {
             this.idHorma = tid;
             this.descripcionHorma = tdescripcion;
 
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public String FidHorma
         {

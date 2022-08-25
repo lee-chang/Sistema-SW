@@ -6,24 +6,26 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using AccesoDatos;
 
 namespace Sistema.Forms
 {
     internal class FPuntaModelo
     {
+        ConnectionToSql Cadenaconex = new ConnectionToSql();
+
         private String idPunta, desPunta;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "SERVER=DESKTOP-DS840MB;DATABASE=swzicca;Integrated Security=SSPI;";
         public FPuntaModelo()
         {
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public FPuntaModelo(String tid, String tdescripcion)
         {
             this.idPunta = tid;
             this.desPunta = tdescripcion;
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public String FidPunta
         {

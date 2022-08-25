@@ -6,25 +6,27 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using AccesoDatos;
 
 namespace Sistema.Forms
 {
     internal class FTacoModelo
     {
+        ConnectionToSql Cadenaconex = new ConnectionToSql();
+
         private String idTaco, desTaco;
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String Cadenaconex = "SERVER=DESKTOP-DS840MB;DATABASE=swzicca;Integrated Security=SSPI;";
         public FTacoModelo()
         {
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public FTacoModelo(String tid, String tdescripcion)
         {
             this.idTaco = tid;
             this.desTaco = tdescripcion;
 
-            conn = new SqlConnection(Cadenaconex);
+            conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
         public String FidTaco
         {

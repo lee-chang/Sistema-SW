@@ -180,6 +180,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{e7b9acbe-f54e-462e-bf8c-b475c7e70ac1}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{21c81222-2826-4b3b-b790-7c082bd56a6a}</Project>
       <Name>Common</Name>

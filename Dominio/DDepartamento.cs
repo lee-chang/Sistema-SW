@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-
+using AccesoDatos;
 
 namespace Dominio
 {
     class DDepartamento
     {
 
-        string cadenaConexion = "server=DESKTOP-25FAVIP\\SQLEXPRESS;database=SWZICCA;INTEGRATED SECURITY=true;";
+        ConnectionToSql conn = new ConnectionToSql();
 
         SqlConnection conexion;
         SqlCommand cmd;
@@ -28,7 +28,7 @@ namespace Dominio
         public DataTable listaDepartamento()
         {
             dt = new DataTable();
-            conexion = new SqlConnection(cadenaConexion);
+            conexion = new SqlConnection(conn.CadenaConexion);
             try
             {
                 conexion.Open();
