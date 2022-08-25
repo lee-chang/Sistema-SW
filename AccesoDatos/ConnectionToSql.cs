@@ -14,7 +14,7 @@ namespace AccesoDatos
         private String cadenaConexion;
         public ConnectionToSql()
         {
-            connectionString = "Server=Legion-DRHR;Database=swzicca;Integrated Security=true;";
+            connectionString = "Server=DESKTOP-25FAVIP\\SQLEXPRESS;Database=swzicca;Integrated Security=true;";
             cadenaConexion = connectionString;
         }
         protected SqlConnection GetConnection()
