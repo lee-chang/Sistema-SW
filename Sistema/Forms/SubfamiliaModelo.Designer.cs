@@ -161,6 +161,7 @@
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 30);
             this.iconPictureBox1.TabIndex = 19;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // SubfamiliaModelo
             // 

@@ -433,26 +433,26 @@
             this.MenuPedidos.MenuItemTextColor = System.Drawing.Color.Empty;
             this.MenuPedidos.Name = "MenuPedidos";
             this.MenuPedidos.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuPedidos.Size = new System.Drawing.Size(211, 104);
+            this.MenuPedidos.Size = new System.Drawing.Size(171, 76);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // cotizarToolStripMenuItem
             // 
             this.cotizarToolStripMenuItem.Name = "cotizarToolStripMenuItem";
-            this.cotizarToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.cotizarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.cotizarToolStripMenuItem.Text = "Cotizar";
             this.cotizarToolStripMenuItem.Click += new System.EventHandler(this.cotizarToolStripMenuItem_Click);
             // 
             // comprobanteToolStripMenuItem
             // 
             this.comprobanteToolStripMenuItem.Name = "comprobanteToolStripMenuItem";
-            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
             this.comprobanteToolStripMenuItem.Text = "Comprobante";
             // 
             // MenuProduccion
