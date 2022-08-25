@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,15 @@ namespace Sistema.Forms
 {
     public partial class Modelo : Form
     {
+        
+        FModelo objFModelo = new FModelo();
+
+        FHorma objFHorma = new FHorma();
+        FPuntaModelo objFPuntaModelo = new FPuntaModelo();
+        FTacoModelo objFTacoModelo = new FTacoModelo();
+        FFamiliaModelo objFFamiliaModelo = new FFamiliaModelo();
+        FSubfamiliaModelo objFSubfamiliaModelo = new FSubfamiliaModelo();
+
         public Modelo()
         {
             InitializeComponent();
@@ -21,7 +31,6 @@ namespace Sistema.Forms
         {
             try
             {
-                FModelo objFModelo = new FModelo();
                 objFModelo.FidModelo = txtmodelo.Text;
                 objFModelo.BuscarModelo();
                 txtdesmodelo.Text = objFModelo.FdesModelo;
@@ -60,45 +69,60 @@ namespace Sistema.Forms
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Familia
+
         }
 
-        private void Modelo_Load(object sender, EventArgs e)
+        public void CargarFamiliaModelo()
+        {
+            comboBox1.DisplayMember = "Nombfamilia";
+            comboBox1.ValueMember = "FamiliamodeloID";
+            comboBox1.DataSource = objFFamiliaModelo.ListarFamiliamodelos();
+        }
+
+        public void CargarHorma()
+        {
+            comboBox2.DisplayMember = "Descripcion";
+            comboBox2.ValueMember = "HormaID";
+            comboBox2.DataSource = objFHorma.ListarHorma();
+        }
+
+        public void CargarPunta()
+        {
+            comboBox3.DisplayMember = "Descripcion";
+            comboBox3.ValueMember = "PuntamodeloID";
+            comboBox3.DataSource = objFPuntaModelo.ListarPunta();
+        }
+
+
+        public void CargarTaco()
+        {            
+            comboBox5.DisplayMember = "TacoModID";
+            comboBox5.ValueMember = "TacoModID";
+            comboBox5.DataSource = objFTacoModelo.ListarTaco();
+        }
+
+        public void CargarSubFam()
+        { 
+            comboBox4.DisplayMember = "SubfamiliamodID";
+            comboBox4.ValueMember = "SubfamiliamodID";
+            comboBox4.DataSource = objFSubfamiliaModelo.ListarSubfamiliaModelos();
+        }
+
+    private void Modelo_Load(object sender, EventArgs e)
         {
             FillGrid();
 
-            FHorma objFHorma = new FHorma();
-            FPuntaModelo objFPuntaModelo = new FPuntaModelo();
-            FTacoModelo objFTacoModelo = new FTacoModelo();
-            FFamiliaModelo objFFamiliaModelo = new FFamiliaModelo();
-            FSubfamiliaModelo objFSubfamiliaModelo = new FSubfamiliaModelo();
-            comboBox2.DataSource = objFHorma.ListarHorma();
-            comboBox2.DisplayMember = "HormaID";
-            comboBox2.ValueMember = "HormaID";
-
-
-            comboBox3.DataSource = objFPuntaModelo.ListarPunta();
-            comboBox3.DisplayMember = "PuntamodeloID";
-            comboBox3.ValueMember = "PuntamodeloID";
-
-
-            comboBox5.DataSource = objFTacoModelo.ListarTaco();
-            comboBox5.DisplayMember = "TacoModID";
-            comboBox5.ValueMember = "TacoModID";
-
-            comboBox4.DataSource = objFSubfamiliaModelo.ListarSubfamiliaModelos();
-            comboBox4.DisplayMember = "SubfamiliamodID";
-            comboBox4.ValueMember = "SubfamiliamodID";
-
-            comboBox1.DataSource = objFFamiliaModelo.ListarFamiliamodelos();
-            comboBox1.DisplayMember = "FamiliamodeloID";
-            comboBox1.ValueMember = "FamiliamodeloID";
+            CargarFamiliaModelo();
+            CargarSubFam();
+            CargarHorma();
+            CargarPunta();
+            CargarTaco();
 
         }
         private void FillGrid()
         {
             try
             {
-                FModelo objFModelo = new FModelo();
                 DGVModelo.DataSource = objFModelo.ListarModelo();
             }
             catch (Exception ex)

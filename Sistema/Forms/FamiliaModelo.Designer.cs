@@ -94,6 +94,7 @@
             this.DGVFamiliamodelo.RowHeadersWidth = 51;
             this.DGVFamiliamodelo.Size = new System.Drawing.Size(511, 154);
             this.DGVFamiliamodelo.TabIndex = 14;
+            this.DGVFamiliamodelo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVFamiliamodelo_CellContentClick);
             // 
             // groupBox1
             // 

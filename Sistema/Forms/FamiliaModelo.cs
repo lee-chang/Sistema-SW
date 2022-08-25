@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema;
+using Dominio;
 
 namespace Sistema.Forms
 {
     public partial class FamiliaModelo : Form
     {
+        NFamiliaModelo nfamod = new NFamiliaModelo();
+        EFamiliaModelo efamod = new EFamiliaModelo();
+
         public FamiliaModelo()
         {
             InitializeComponent();
@@ -91,6 +96,9 @@ namespace Sistema.Forms
         private void FamiliaModelo_Load(object sender, EventArgs e)
         {
             FillGrid();
+            DGVFamiliamodelo.DataSource = nfamod.listaFamiliaModelo();
+
+
         }
         private void FillGrid()
         {
@@ -113,5 +121,9 @@ namespace Sistema.Forms
             txtidFamiliamodelo.Focus();
         }
 
+        private void DGVFamiliamodelo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

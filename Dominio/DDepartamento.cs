@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 //Agregando las Librerias
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using AccesoDatos;
