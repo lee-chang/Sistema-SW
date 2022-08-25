@@ -62,8 +62,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBuscar.Location = new System.Drawing.Point(752, 72);
+            this.btnBuscar.Location = new System.Drawing.Point(616, 60);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(170, 52);
@@ -77,7 +76,7 @@
             this.txtclientid.Location = new System.Drawing.Point(211, 87);
             this.txtclientid.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtclientid.Name = "txtclientid";
-            this.txtclientid.Size = new System.Drawing.Size(213, 22);
+            this.txtclientid.Size = new System.Drawing.Size(213, 25);
             this.txtclientid.TabIndex = 4;
             // 
             // label1
@@ -87,7 +86,7 @@
             this.label1.Location = new System.Drawing.Point(69, 91);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Codigo Cliente";
             // 
@@ -98,7 +97,7 @@
             this.label3.Location = new System.Drawing.Point(75, 148);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(110, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Tipo Identidad";
             // 
@@ -108,7 +107,7 @@
             this.cbxtipoid.Location = new System.Drawing.Point(212, 141);
             this.cbxtipoid.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.cbxtipoid.Name = "cbxtipoid";
-            this.cbxtipoid.Size = new System.Drawing.Size(117, 24);
+            this.cbxtipoid.Size = new System.Drawing.Size(117, 28);
             this.cbxtipoid.TabIndex = 7;
             this.cbxtipoid.SelectedIndexChanged += new System.EventHandler(this.cbxtipoid_SelectedIndexChanged);
             // 
@@ -119,7 +118,7 @@
             this.label2.Location = new System.Drawing.Point(465, 147);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 16);
+            this.label2.Size = new System.Drawing.Size(105, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Nro Identidad";
             // 
@@ -128,7 +127,7 @@
             this.txtnroiden.Location = new System.Drawing.Point(602, 144);
             this.txtnroiden.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtnroiden.Name = "txtnroiden";
-            this.txtnroiden.Size = new System.Drawing.Size(213, 22);
+            this.txtnroiden.Size = new System.Drawing.Size(213, 25);
             this.txtnroiden.TabIndex = 11;
             // 
             // txtnombre
@@ -136,7 +135,7 @@
             this.txtnombre.Location = new System.Drawing.Point(212, 196);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(213, 22);
+            this.txtnombre.Size = new System.Drawing.Size(213, 25);
             this.txtnombre.TabIndex = 13;
             // 
             // label4
@@ -146,7 +145,7 @@
             this.label4.Location = new System.Drawing.Point(116, 200);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.Size = new System.Drawing.Size(65, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Nombre";
             // 
@@ -155,7 +154,7 @@
             this.txtemail.Location = new System.Drawing.Point(211, 258);
             this.txtemail.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(213, 22);
+            this.txtemail.Size = new System.Drawing.Size(213, 25);
             this.txtemail.TabIndex = 15;
             // 
             // label5
@@ -165,7 +164,7 @@
             this.label5.Location = new System.Drawing.Point(132, 262);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 16);
+            this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 14;
             this.label5.Text = "Email";
             // 
@@ -174,7 +173,7 @@
             this.txttelefono.Location = new System.Drawing.Point(602, 258);
             this.txttelefono.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(213, 22);
+            this.txttelefono.Size = new System.Drawing.Size(213, 25);
             this.txttelefono.TabIndex = 17;
             // 
             // label6
@@ -184,14 +183,13 @@
             this.label6.Location = new System.Drawing.Point(491, 258);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 16);
+            this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Telefono";
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(449, 474);
+            this.btnActualizar.Location = new System.Drawing.Point(482, 480);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(101, 29);
@@ -202,8 +200,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRegistrar.Location = new System.Drawing.Point(278, 474);
+            this.btnRegistrar.Location = new System.Drawing.Point(311, 480);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(101, 29);
@@ -217,7 +214,7 @@
             this.txtapellido.Location = new System.Drawing.Point(602, 196);
             this.txtapellido.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(213, 22);
+            this.txtapellido.Size = new System.Drawing.Size(213, 25);
             this.txtapellido.TabIndex = 22;
             // 
             // label7
@@ -227,7 +224,7 @@
             this.label7.Location = new System.Drawing.Point(500, 200);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 16);
+            this.label7.Size = new System.Drawing.Size(65, 20);
             this.label7.TabIndex = 21;
             this.label7.Text = "Apellido";
             // 
@@ -238,7 +235,7 @@
             this.label8.Location = new System.Drawing.Point(74, 317);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 16);
+            this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 24;
             this.label8.Text = "Departamento";
             // 
@@ -248,7 +245,7 @@
             this.comboBox2.Location = new System.Drawing.Point(212, 310);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(214, 24);
+            this.comboBox2.Size = new System.Drawing.Size(214, 28);
             this.comboBox2.TabIndex = 23;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -259,7 +256,7 @@
             this.label9.Location = new System.Drawing.Point(487, 314);
             this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 16);
+            this.label9.Size = new System.Drawing.Size(72, 20);
             this.label9.TabIndex = 26;
             this.label9.Text = "Provincia";
             // 
@@ -269,7 +266,7 @@
             this.comboBox3.Location = new System.Drawing.Point(602, 310);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(213, 24);
+            this.comboBox3.Size = new System.Drawing.Size(213, 28);
             this.comboBox3.TabIndex = 25;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -280,7 +277,7 @@
             this.label10.Location = new System.Drawing.Point(116, 363);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 16);
+            this.label10.Size = new System.Drawing.Size(59, 20);
             this.label10.TabIndex = 27;
             this.label10.Text = "Distrito";
             // 
@@ -290,7 +287,7 @@
             this.comboBox4.Location = new System.Drawing.Point(210, 359);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(214, 24);
+            this.comboBox4.Size = new System.Drawing.Size(214, 28);
             this.comboBox4.TabIndex = 28;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
@@ -299,7 +296,7 @@
             this.txtdir.Location = new System.Drawing.Point(210, 413);
             this.txtdir.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.txtdir.Name = "txtdir";
-            this.txtdir.Size = new System.Drawing.Size(605, 22);
+            this.txtdir.Size = new System.Drawing.Size(605, 25);
             this.txtdir.TabIndex = 30;
             // 
             // label11
@@ -309,13 +306,12 @@
             this.label11.Location = new System.Drawing.Point(99, 413);
             this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 16);
+            this.label11.Size = new System.Drawing.Size(75, 20);
             this.label11.TabIndex = 29;
             this.label11.Text = "Direccion";
             // 
             // iconCerrar
             // 
-            this.iconCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.iconCerrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.iconCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconCerrar.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -323,7 +319,7 @@
             this.iconCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCerrar.IconSize = 23;
-            this.iconCerrar.Location = new System.Drawing.Point(185, 33);
+            this.iconCerrar.Location = new System.Drawing.Point(105, 29);
             this.iconCerrar.Name = "iconCerrar";
             this.iconCerrar.Size = new System.Drawing.Size(23, 24);
             this.iconCerrar.TabIndex = 31;
@@ -332,8 +328,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLimpiar.Location = new System.Drawing.Point(602, 474);
+            this.btnLimpiar.Location = new System.Drawing.Point(635, 480);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(101, 29);
@@ -347,15 +342,16 @@
             this.DGVCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVCliente.Location = new System.Drawing.Point(72, 539);
             this.DGVCliente.Name = "DGVCliente";
+            this.DGVCliente.RowHeadersWidth = 51;
             this.DGVCliente.Size = new System.Drawing.Size(866, 150);
             this.DGVCliente.TabIndex = 33;
             // 
             // Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1003, 731);
+            this.ClientSize = new System.Drawing.Size(1036, 737);
             this.Controls.Add(this.DGVCliente);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.iconCerrar);
