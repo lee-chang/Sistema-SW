@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class ECliente
+    public class ECliente
     {
-        private String cliID, nombCli, apellCli, dirCli, tipoidenid, nroidenCli, emailCli, telfCli, distid;
+        private String cliID, nombCli, apellCli, dirCli, tipoidenid, nroidenCli, emailCli, telfCli, distid,provid,depid;
 
         public String FidCliente
         {
@@ -63,6 +63,31 @@ namespace Dominio
             set { distid = value; }
         }
 
+        public string Provid
+        {
+            get
+            {
+                return provid;
+            }
+
+            set
+            {
+                provid = value;
+            }
+        }
+        
+        public string Depid
+        {
+            get
+            {
+                return depid;
+            }
+
+            set
+            {
+                depid = value;
+            }
+        }
 
     }
 }
