@@ -100,5 +100,10 @@ namespace Sistema.Forms
             }
 
         }
+
+        private void iconCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
