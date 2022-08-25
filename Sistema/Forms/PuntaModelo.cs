@@ -95,5 +95,20 @@ namespace Sistema.Forms
         {
 
         }
+
+        private void txtpunta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdespunta_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

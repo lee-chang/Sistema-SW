@@ -43,14 +43,14 @@
             // 
             // txthorma
             // 
-            this.txthorma.Location = new System.Drawing.Point(262, 58);
+            this.txthorma.Location = new System.Drawing.Point(163, 56);
             this.txthorma.Name = "txthorma";
             this.txthorma.Size = new System.Drawing.Size(224, 22);
             this.txthorma.TabIndex = 0;
             // 
             // txtdeshorma
             // 
-            this.txtdeshorma.Location = new System.Drawing.Point(262, 101);
+            this.txtdeshorma.Location = new System.Drawing.Point(163, 99);
             this.txtdeshorma.Name = "txtdeshorma";
             this.txtdeshorma.Size = new System.Drawing.Size(224, 22);
             this.txtdeshorma.TabIndex = 1;
@@ -58,7 +58,7 @@
             // DGVHorma
             // 
             this.DGVHorma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVHorma.Location = new System.Drawing.Point(136, 151);
+            this.DGVHorma.Location = new System.Drawing.Point(37, 149);
             this.DGVHorma.Name = "DGVHorma";
             this.DGVHorma.RowHeadersWidth = 51;
             this.DGVHorma.Size = new System.Drawing.Size(495, 213);
@@ -67,7 +67,7 @@
             // 
             // RegistrarHorma
             // 
-            this.RegistrarHorma.Location = new System.Drawing.Point(236, 392);
+            this.RegistrarHorma.Location = new System.Drawing.Point(137, 390);
             this.RegistrarHorma.Name = "RegistrarHorma";
             this.RegistrarHorma.Size = new System.Drawing.Size(115, 30);
             this.RegistrarHorma.TabIndex = 3;
@@ -78,7 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 61);
+            this.label1.Location = new System.Drawing.Point(34, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 4;
@@ -87,7 +87,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(133, 107);
+            this.label2.Location = new System.Drawing.Point(34, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 16);
             this.label2.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // btnactualizarhorma
             // 
-            this.btnactualizarhorma.Location = new System.Drawing.Point(440, 392);
+            this.btnactualizarhorma.Location = new System.Drawing.Point(341, 390);
             this.btnactualizarhorma.Name = "btnactualizarhorma";
             this.btnactualizarhorma.Size = new System.Drawing.Size(115, 30);
             this.btnactualizarhorma.TabIndex = 6;
@@ -105,7 +105,7 @@
             // 
             // btnbuscarhorma
             // 
-            this.btnbuscarhorma.Location = new System.Drawing.Point(516, 50);
+            this.btnbuscarhorma.Location = new System.Drawing.Point(417, 48);
             this.btnbuscarhorma.Name = "btnbuscarhorma";
             this.btnbuscarhorma.Size = new System.Drawing.Size(115, 30);
             this.btnbuscarhorma.TabIndex = 7;
@@ -121,17 +121,17 @@
             this.iconCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
             this.iconCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCerrar.IconSize = 15;
-            this.iconCerrar.Location = new System.Drawing.Point(718, 24);
+            this.iconCerrar.IconSize = 24;
+            this.iconCerrar.Location = new System.Drawing.Point(508, 10);
             this.iconCerrar.Name = "iconCerrar";
-            this.iconCerrar.Size = new System.Drawing.Size(15, 24);
+            this.iconCerrar.Size = new System.Drawing.Size(24, 24);
             this.iconCerrar.TabIndex = 32;
             this.iconCerrar.TabStop = false;
             this.iconCerrar.Click += new System.EventHandler(this.iconCerrar_Click);
             // 
             // Horma
             // 
-            this.ClientSize = new System.Drawing.Size(867, 471);
+            this.ClientSize = new System.Drawing.Size(550, 463);
             this.Controls.Add(this.iconCerrar);
             this.Controls.Add(this.btnbuscarhorma);
             this.Controls.Add(this.btnactualizarhorma);
