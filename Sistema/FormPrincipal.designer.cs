@@ -465,7 +465,7 @@
             this.MenuProduccion.MenuItemTextColor = System.Drawing.Color.Empty;
             this.MenuProduccion.Name = "MenuProduccion";
             this.MenuProduccion.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuProduccion.Size = new System.Drawing.Size(145, 28);
+            this.MenuProduccion.Size = new System.Drawing.Size(211, 56);
             this.MenuProduccion.Opening += new System.ComponentModel.CancelEventHandler(this.MenuProduccion_Opening);
             // 
             // productoToolStripMenuItem
@@ -477,7 +477,7 @@
             this.coleccionToolStripMenuItem,
             this.colorToolStripMenuItem});
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(144, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.productoToolStripMenuItem.Text = "Productos";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
@@ -519,6 +519,7 @@
             this.subfamiliaToolStripMenuItem.Name = "subfamiliaToolStripMenuItem";
             this.subfamiliaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.subfamiliaToolStripMenuItem.Text = "Subfamilia";
+            this.subfamiliaToolStripMenuItem.Click += new System.EventHandler(this.subfamiliaToolStripMenuItem_Click);
             // 
             // tipoPuntaToolStripMenuItem
             // 
