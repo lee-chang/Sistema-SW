@@ -34,11 +34,11 @@ namespace Sistema.Forms
                 objFModelo.FidModelo = txtmodelo.Text;
                 objFModelo.BuscarModelo();
                 txtdesmodelo.Text = objFModelo.FdesModelo;
-                comboBox1.Text = objFModelo.FidFam;
-                comboBox2.Text = objFModelo.FidHorma;
-                comboBox3.Text = objFModelo.FidPunta;
-                comboBox4.Text = objFModelo.FidSubfam;
-                comboBox5.Text = objFModelo.FidTaco;
+                comboBox1.SelectedValue = objFModelo.FidFam;
+                comboBox2.SelectedValue = objFModelo.FidHorma;
+                comboBox3.SelectedValue = objFModelo.FidPunta;
+                comboBox4.SelectedValue = objFModelo.FidSubfam;
+                comboBox5.SelectedValue = objFModelo.FidTaco;
             }
             catch (Exception ex)
             {

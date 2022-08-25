@@ -105,6 +105,7 @@ namespace Sistema.Forms
             {
                 MessageBox.Show("Datos Guardados Correctamente", "Datos Laboratorio", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 limpiarCajas();
+                FillGrid();
             }
         }
 
@@ -178,7 +179,7 @@ namespace Sistema.Forms
                 txtdir.Text = eclie.FdirCliente;
                 txttelefono.Text = eclie.FtelfCliente;
                 txtnroiden.Text = eclie.FnroidenCliente;
-
+                FillGrid();
             }
         }
 
@@ -192,6 +193,18 @@ namespace Sistema.Forms
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FillGrid()
+        {
+            try
+            {
+                DGVCliente.DataSource = nclie.listaCliente();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

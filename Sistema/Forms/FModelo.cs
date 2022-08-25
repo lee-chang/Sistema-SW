@@ -144,13 +144,13 @@ namespace Sistema.Forms
                 }
                 while (dr.Read())
                 { 
-                    idModelo = dr.GetString(1);
-                    desModelo = dr.GetString(0);
+                    idModelo = dr.GetString(0);
+                    desModelo = dr.GetString(1);
                     idFam = dr.GetString(2);
-                    idPunta = dr.GetString(3);
-                    idSubfam = dr.GetString(4);
-                    idTaco = dr.GetString(5);
-                    idHorma = dr.GetString(6);
+                    idPunta = dr.GetString(5);
+                    idSubfam = dr.GetString(3);
+                    idTaco = dr.GetString(6);
+                    idHorma = dr.GetString(4);
                 }
 
             }
