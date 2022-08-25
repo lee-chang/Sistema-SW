@@ -521,6 +521,7 @@
             this.tipoPuntaToolStripMenuItem.Name = "tipoPuntaToolStripMenuItem";
             this.tipoPuntaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tipoPuntaToolStripMenuItem.Text = "Tipo Punta";
+            this.tipoPuntaToolStripMenuItem.Click += new System.EventHandler(this.tipoPuntaToolStripMenuItem_Click);
             // 
             // tipoTacoToolStripMenuItem
             // 
