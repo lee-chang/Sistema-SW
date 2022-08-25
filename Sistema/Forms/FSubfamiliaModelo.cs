@@ -99,8 +99,8 @@ namespace Sistema.Forms
                 }
                 while (dr.Read())
                 {
-                    idSubfamiliaModelo = dr.GetString(0);
-                    DesSubfamiliaModelos = dr.GetString(1);
+                    idSubfamiliaModelo = dr.GetString(1);
+                    DesSubfamiliaModelos = dr.GetString(0);
                 }
 
             }
