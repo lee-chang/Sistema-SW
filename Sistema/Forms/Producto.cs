@@ -31,8 +31,8 @@ namespace Sistema.Forms
                 objFProducto.BuscarProducto();
                 txtDesProducto.Text = objFProducto.FdesProducto;
 
-                float precio = objFProducto.FPrecioventa;
-                txtpventa.Text =precio.ToString();     
+                //float precio = objFProducto.FPrecioventa;
+                txtpventa.Text = objFProducto.FPrecioventa;     
                 cbxTalla.SelectedValue = objFProducto.FidTalla;
                 cbxColec.SelectedValue = objFProducto.FidColeccion;
                 cbxColor.SelectedValue = objFProducto.FidColor;
@@ -88,8 +88,8 @@ namespace Sistema.Forms
         public void CargarColor()
         {
             cbxColor.DataSource = objFColor.ListarColor();
+            cbxColor.DisplayMember = "Nombcolor";
             cbxColor.ValueMember = "ColorID";
-            cbxColor.DisplayMember = "Nombcolor";                 
         }
 
         public void CargarModelo()
@@ -115,10 +115,11 @@ namespace Sistema.Forms
                 FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.FdesProducto = txtDesProducto.Text;
-                float precio;
-                string precioventa = txtpventa.Text;
-                precio = float.Parse(precioventa);
-                objFProducto.FPrecioventa = precio;
+                //float precio;
+                //string precioventa = txtpventa.Text;
+                //precio = float.Parse(precioventa);
+                //objFProducto.FPrecioventa = precio;
+                objFProducto.FPrecioventa = txtpventa.Text;
                 objFProducto.FidTalla = cbxTalla.SelectedValue.ToString();
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();
@@ -142,10 +143,11 @@ namespace Sistema.Forms
                 FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.FdesProducto = txtDesProducto.Text;
-                float precio;
-                string precioventa = txtpventa.Text;
-                precio = float.Parse(precioventa);
-                objFProducto.FPrecioventa =precio;
+                //float precio;
+                //string precioventa = txtpventa.Text;
+                //precio = float.Parse(precioventa);
+                //objFProducto.FPrecioventa =precio;
+                objFProducto.FPrecioventa = txtpventa.Text;
                 objFProducto.FidTalla = cbxTalla.SelectedValue.ToString();
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();

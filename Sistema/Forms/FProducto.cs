@@ -14,7 +14,7 @@ namespace Sistema.Forms
     {
         ConnectionToSql Cadenaconex = new ConnectionToSql();
         private String idProducto, desProducto, idColeccion, idModelo, idColor, idTalla;
-        private float Precioventa;
+        private String Precioventa;
 
         private SqlConnection conn;
         private SqlCommand cmd;
@@ -22,7 +22,7 @@ namespace Sistema.Forms
         {
             conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
-        public FProducto(String idProducto, String desProducto, float Precioventa, String idColeccion, String idModelo, String idColor, String idTalla)
+        public FProducto(String idProducto, String desProducto, String Precioventa, String idColeccion, String idModelo, String idColor, String idTalla)
         {
             this.idProducto = idProducto;
             this.desProducto = desProducto;
@@ -45,7 +45,7 @@ namespace Sistema.Forms
             set { this.desProducto = value; }
         }
 
-        public float FPrecioventa
+        public String FPrecioventa
         {
             get { return this.Precioventa; }
             set { this.Precioventa = value; }
@@ -148,7 +148,7 @@ namespace Sistema.Forms
                 {
                     idProducto = dr.GetString(0);
                     desProducto = dr.GetString(1);
-                    //float Precioventa = dr.GetFloat(2);
+                    Precioventa = dr.GetString(2);
                     idColeccion = dr.GetString(3);
                     idModelo = dr.GetString(4);
                     idColor = dr.GetString(5);
