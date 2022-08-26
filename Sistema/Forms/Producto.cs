@@ -27,12 +27,10 @@ namespace Sistema.Forms
         {
             try
             {
-                FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.BuscarProducto();
                 txtDesProducto.Text = objFProducto.FdesProducto;
-                string a = Convert.ToString(objFProducto.FPrecioventa);
-                txtpventa.Text = a;
+                txtpventa.Text = objFProducto.FPrecioventa.ToString();
                 cbxTalla.SelectedValue = objFProducto.FidTalla;
                 cbxColec.SelectedValue = objFProducto.FidColeccion;
                 cbxColor.SelectedValue = objFProducto.FidColor;
@@ -69,31 +67,35 @@ namespace Sistema.Forms
         }
         public void CargarTalla()
         {
-            cbxTalla.DisplayMember = "Descripcion";
-            cbxTalla.ValueMember = "TallaID";
             cbxTalla.DataSource = objFTalla.ListarTalla();
+            cbxTalla.DisplayMember = "Numero";
+            cbxTalla.ValueMember = "TallaID";
+            
         }
 
         public void CargarColeccion()
         {
-            cbxColec.DisplayMember = "Descripcion";
-            cbxColec.ValueMember = "ColeccionID";
             cbxColec.DataSource = objFColeccion.ListarCol();
+            cbxColec.DisplayMember = "Nombrecoleccion";
+            cbxColec.ValueMember = "ColeccionID";
+            
         }
 
 
         public void CargarColor()
         {
-            cbxColor.DisplayMember = "Descripcion";
-            cbxColor.ValueMember = "ColorID";
             cbxColor.DataSource = objFColor.ListarColor();
+            cbxColor.ValueMember = "ColorID";
+            cbxColor.DisplayMember = "NombColor";
+            
+            
         }
 
         public void CargarModelo()
         {
-            cbxColor.DisplayMember = "Descripcion";
-            cbxColor.ValueMember = "ModeloID";
-            cbxColor.DataSource = objFModelo.ListarModelo();
+            cbxMod.DataSource = objFModelo.ListarModelo();
+            cbxMod.DisplayMember = "Descripcion";
+            cbxMod.ValueMember = "ModeloID";
         }
 
         private void LimpiarForm()
@@ -135,8 +137,10 @@ namespace Sistema.Forms
                 FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.FdesProducto = txtDesProducto.Text;
-                int b = Convert.ToInt32(txtpventa.Text);
-                objFProducto.FPrecioventa = b;
+                float precio;
+                string precioventa = txtpventa.Text;
+                precio = float.Parse(precioventa);
+                objFProducto.FPrecioventa =precio;
                 objFProducto.FidTalla = cbxTalla.SelectedValue.ToString();
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();
