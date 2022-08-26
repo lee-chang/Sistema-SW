@@ -33,6 +33,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.DGVModelo = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textpventa = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxTalla = new System.Windows.Forms.ComboBox();
             this.cbxMod = new System.Windows.Forms.ComboBox();
@@ -46,8 +48,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtidprod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textpventa = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVModelo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -62,7 +62,7 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 30;
-            this.iconPictureBox1.Location = new System.Drawing.Point(685, 33);
+            this.iconPictureBox1.Location = new System.Drawing.Point(22, 27);
             this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 30);
@@ -72,7 +72,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(423, 499);
+            this.button3.Location = new System.Drawing.Point(423, 488);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 28);
@@ -83,7 +83,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(231, 499);
+            this.button2.Location = new System.Drawing.Point(231, 488);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
@@ -124,6 +124,24 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(32, 98);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Precio Venta";
+            // 
+            // textpventa
+            // 
+            this.textpventa.Location = new System.Drawing.Point(149, 94);
+            this.textpventa.Margin = new System.Windows.Forms.Padding(4);
+            this.textpventa.Name = "textpventa";
+            this.textpventa.Size = new System.Drawing.Size(160, 26);
+            this.textpventa.TabIndex = 16;
             // 
             // label7
             // 
@@ -249,24 +267,6 @@
             this.label1.Size = new System.Drawing.Size(133, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Codigo Producto";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 98);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 20);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Precio Venta";
-            // 
-            // textpventa
-            // 
-            this.textpventa.Location = new System.Drawing.Point(149, 94);
-            this.textpventa.Margin = new System.Windows.Forms.Padding(4);
-            this.textpventa.Name = "textpventa";
-            this.textpventa.Size = new System.Drawing.Size(160, 26);
-            this.textpventa.TabIndex = 16;
             // 
             // Producto
             // 
