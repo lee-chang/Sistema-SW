@@ -484,6 +484,7 @@
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo Producto";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // modelosToolStripMenuItem
             // 

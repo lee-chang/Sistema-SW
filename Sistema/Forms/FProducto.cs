@@ -80,7 +80,7 @@ namespace Sistema.Forms
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_INSERTAPRODUCTO", conn);
+                cmd = new SqlCommand("SP_REGISTRARPRODUCTO", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@IDPRODUCTO", idProducto);
                 cmd.Parameters.AddWithValue("@DESPRODUCTO", desProducto);
@@ -149,10 +149,10 @@ namespace Sistema.Forms
                     idProducto = dr.GetString(0);
                     desProducto = dr.GetString(1);
                     Precioventa = dr.GetFloat(2);
-                    idColeccion = dr.GetString(5);
-                    idModelo = dr.GetString(3);
-                    idColor = dr.GetString(6);
-                    idTalla = dr.GetString(4);
+                    idColeccion = dr.GetString(3);
+                    idModelo = dr.GetString(4);
+                    idColor = dr.GetString(5);
+                    idTalla = dr.GetString(6);
                 }
 
             }
