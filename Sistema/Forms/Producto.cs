@@ -30,7 +30,10 @@ namespace Sistema.Forms
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.BuscarProducto();
                 txtDesProducto.Text = objFProducto.FdesProducto;
-                txtpventa.Text = objFProducto.FPrecioventa.ToString();
+                float pven = objFProducto.FPrecioventa;
+                string pventa;
+                pventa = pven.ToString();
+                txtpventa.Text = pventa;
                 cbxTalla.SelectedValue = objFProducto.FidTalla;
                 cbxColec.SelectedValue = objFProducto.FidColeccion;
                 cbxColor.SelectedValue = objFProducto.FidColor;
@@ -114,6 +117,10 @@ namespace Sistema.Forms
                 FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.FdesProducto = txtDesProducto.Text;
+                float precio;
+                string precioventa = txtpventa.Text;
+                precio = float.Parse(precioventa);
+                objFProducto.FPrecioventa = precio;
                 objFProducto.FidTalla = cbxTalla.SelectedValue.ToString();
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();
@@ -145,8 +152,8 @@ namespace Sistema.Forms
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();
                 objFProducto.FidModelo = cbxMod.SelectedValue.ToString();
-                objFModelo.RegistrarModelo();
-                MessageBox.Show("Modelo Registrado");
+                objFProducto.RegistrarProducto();
+                MessageBox.Show("Producto Registrado");
                 LimpiarForm();
                 FillGrid();
             }
@@ -154,6 +161,11 @@ namespace Sistema.Forms
             {
                 throw new Exception(ex.Message);
             }
+
+        }
+
+        private void txtidProducto_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
