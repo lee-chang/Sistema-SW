@@ -49,18 +49,20 @@
             this.iconCerrar.IconChar = FontAwesome.Sharp.IconChar.X;
             this.iconCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCerrar.IconSize = 24;
-            this.iconCerrar.Location = new System.Drawing.Point(610, 14);
+            this.iconCerrar.IconSize = 30;
+            this.iconCerrar.Location = new System.Drawing.Point(66, 36);
+            this.iconCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconCerrar.Name = "iconCerrar";
-            this.iconCerrar.Size = new System.Drawing.Size(24, 24);
+            this.iconCerrar.Size = new System.Drawing.Size(36, 30);
             this.iconCerrar.TabIndex = 41;
             this.iconCerrar.TabStop = false;
             // 
             // btnbuscarcol
             // 
-            this.btnbuscarcol.Location = new System.Drawing.Point(519, 52);
+            this.btnbuscarcol.Location = new System.Drawing.Point(721, 183);
+            this.btnbuscarcol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscarcol.Name = "btnbuscarcol";
-            this.btnbuscarcol.Size = new System.Drawing.Size(115, 30);
+            this.btnbuscarcol.Size = new System.Drawing.Size(172, 37);
             this.btnbuscarcol.TabIndex = 40;
             this.btnbuscarcol.Text = "Buscar";
             this.btnbuscarcol.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             // 
             // btnactualizarcol
             // 
-            this.btnactualizarcol.Location = new System.Drawing.Point(443, 394);
+            this.btnactualizarcol.Location = new System.Drawing.Point(607, 576);
+            this.btnactualizarcol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnactualizarcol.Name = "btnactualizarcol";
-            this.btnactualizarcol.Size = new System.Drawing.Size(115, 30);
+            this.btnactualizarcol.Size = new System.Drawing.Size(172, 37);
             this.btnactualizarcol.TabIndex = 39;
             this.btnactualizarcol.Text = "Actualizar";
             this.btnactualizarcol.UseVisualStyleBackColor = true;
@@ -79,26 +82,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 109);
+            this.label2.Location = new System.Drawing.Point(147, 225);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(135, 16);
             this.label2.TabIndex = 38;
             this.label2.Text = "Nombre Coleccion";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 63);
+            this.label1.Location = new System.Drawing.Point(147, 169);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.Size = new System.Drawing.Size(130, 16);
             this.label1.TabIndex = 37;
             this.label1.Text = "Codigo Coleccion";
             // 
             // btnregistrarcol
             // 
-            this.btnregistrarcol.Location = new System.Drawing.Point(239, 394);
+            this.btnregistrarcol.Location = new System.Drawing.Point(301, 576);
+            this.btnregistrarcol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnregistrarcol.Name = "btnregistrarcol";
-            this.btnregistrarcol.Size = new System.Drawing.Size(115, 30);
+            this.btnregistrarcol.Size = new System.Drawing.Size(172, 37);
             this.btnregistrarcol.TabIndex = 36;
             this.btnregistrarcol.Text = "Registrar";
             this.btnregistrarcol.UseVisualStyleBackColor = true;
@@ -107,31 +113,35 @@
             // DGVColeccion
             // 
             this.DGVColeccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVColeccion.Location = new System.Drawing.Point(139, 153);
+            this.DGVColeccion.Location = new System.Drawing.Point(151, 279);
+            this.DGVColeccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DGVColeccion.Name = "DGVColeccion";
             this.DGVColeccion.RowHeadersWidth = 51;
-            this.DGVColeccion.Size = new System.Drawing.Size(495, 213);
+            this.DGVColeccion.Size = new System.Drawing.Size(742, 262);
             this.DGVColeccion.TabIndex = 35;
             // 
             // txtnomcoleccion
             // 
-            this.txtnomcoleccion.Location = new System.Drawing.Point(265, 103);
+            this.txtnomcoleccion.Location = new System.Drawing.Point(341, 218);
+            this.txtnomcoleccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtnomcoleccion.Name = "txtnomcoleccion";
-            this.txtnomcoleccion.Size = new System.Drawing.Size(224, 20);
+            this.txtnomcoleccion.Size = new System.Drawing.Size(334, 22);
             this.txtnomcoleccion.TabIndex = 34;
             // 
             // txtcoleccion
             // 
-            this.txtcoleccion.Location = new System.Drawing.Point(265, 60);
+            this.txtcoleccion.Location = new System.Drawing.Point(341, 165);
+            this.txtcoleccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcoleccion.Name = "txtcoleccion";
-            this.txtcoleccion.Size = new System.Drawing.Size(224, 20);
+            this.txtcoleccion.Size = new System.Drawing.Size(334, 22);
             this.txtcoleccion.TabIndex = 33;
             // 
             // Coleccion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1058, 724);
             this.Controls.Add(this.iconCerrar);
             this.Controls.Add(this.btnbuscarcol);
             this.Controls.Add(this.btnactualizarcol);
@@ -141,6 +151,8 @@
             this.Controls.Add(this.DGVColeccion);
             this.Controls.Add(this.txtnomcoleccion);
             this.Controls.Add(this.txtcoleccion);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Coleccion";
             this.Text = "Coleccion";
             this.Load += new System.EventHandler(this.Coleccion_Load);

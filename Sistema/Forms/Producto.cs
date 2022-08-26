@@ -72,7 +72,8 @@ namespace Sistema.Forms
             cbxTalla.DataSource = objFTalla.ListarTalla();
             cbxTalla.DisplayMember = "Numero";
             cbxTalla.ValueMember = "TallaID";
-            
+
+
         }
 
         public void CargarColeccion()
@@ -87,8 +88,8 @@ namespace Sistema.Forms
         public void CargarColor()
         {
             cbxColor.DataSource = objFColor.ListarColor();
-            cbxColor.DisplayMember = "NombColor";
-            cbxColor.ValueMember = "ColorID";              
+            cbxColor.ValueMember = "ColorID";
+            cbxColor.DisplayMember = "Nombcolor";                 
         }
 
         public void CargarModelo()

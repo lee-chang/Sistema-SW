@@ -53,11 +53,10 @@
             this.groupBox1.Controls.Add(this.txtDesSubfamiliaModelos);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtidSubfamiliaModelo);
-            this.groupBox1.Location = new System.Drawing.Point(13, 63);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(10, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(597, 374);
+            this.groupBox1.Size = new System.Drawing.Size(1007, 596);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Subfamilia";
@@ -66,10 +65,10 @@
             // BtnRegistrar
             // 
             this.BtnRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnRegistrar.Location = new System.Drawing.Point(30, 328);
-            this.BtnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.Location = new System.Drawing.Point(222, 533);
             this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(100, 28);
+            this.BtnRegistrar.Size = new System.Drawing.Size(134, 53);
             this.BtnRegistrar.TabIndex = 22;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
@@ -78,20 +77,19 @@
             // DGVSubfamiliaModelo
             // 
             this.DGVSubfamiliaModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVSubfamiliaModelo.Location = new System.Drawing.Point(30, 151);
-            this.DGVSubfamiliaModelo.Margin = new System.Windows.Forms.Padding(4);
+            this.DGVSubfamiliaModelo.Location = new System.Drawing.Point(107, 207);
             this.DGVSubfamiliaModelo.Name = "DGVSubfamiliaModelo";
             this.DGVSubfamiliaModelo.RowHeadersWidth = 51;
-            this.DGVSubfamiliaModelo.Size = new System.Drawing.Size(511, 154);
+            this.DGVSubfamiliaModelo.Size = new System.Drawing.Size(771, 289);
             this.DGVSubfamiliaModelo.TabIndex = 21;
             this.DGVSubfamiliaModelo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVSubfamiliaModelo_CellContentClick);
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(441, 29);
-            this.BtnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.Location = new System.Drawing.Point(766, 73);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(100, 28);
+            this.BtnBuscar.Size = new System.Drawing.Size(131, 59);
             this.BtnBuscar.TabIndex = 20;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
@@ -100,20 +98,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 90);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(104, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 16);
+            this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Descripcion";
             // 
             // BtnActualizar
             // 
             this.BtnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnActualizar.Location = new System.Drawing.Point(441, 328);
-            this.BtnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.Location = new System.Drawing.Point(615, 534);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(100, 28);
+            this.BtnActualizar.Size = new System.Drawing.Size(135, 56);
             this.BtnActualizar.TabIndex = 16;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
@@ -121,28 +119,28 @@
             // 
             // txtDesSubfamiliaModelos
             // 
-            this.txtDesSubfamiliaModelos.Location = new System.Drawing.Point(168, 84);
-            this.txtDesSubfamiliaModelos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDesSubfamiliaModelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesSubfamiliaModelos.Location = new System.Drawing.Point(268, 128);
             this.txtDesSubfamiliaModelos.Name = "txtDesSubfamiliaModelos";
-            this.txtDesSubfamiliaModelos.Size = new System.Drawing.Size(373, 22);
+            this.txtDesSubfamiliaModelos.Size = new System.Drawing.Size(383, 22);
             this.txtDesSubfamiliaModelos.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 32);
+            this.label1.Size = new System.Drawing.Size(136, 32);
             this.label1.TabIndex = 10;
             this.label1.Text = "Codigo\r\nSubfamilia Modelo";
             // 
             // txtidSubfamiliaModelo
             // 
-            this.txtidSubfamiliaModelo.Location = new System.Drawing.Point(168, 35);
-            this.txtidSubfamiliaModelo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidSubfamiliaModelo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidSubfamiliaModelo.Location = new System.Drawing.Point(268, 81);
             this.txtidSubfamiliaModelo.Name = "txtidSubfamiliaModelo";
-            this.txtidSubfamiliaModelo.Size = new System.Drawing.Size(213, 22);
+            this.txtidSubfamiliaModelo.Size = new System.Drawing.Size(383, 22);
             this.txtidSubfamiliaModelo.TabIndex = 11;
             // 
             // iconPictureBox1
@@ -154,22 +152,23 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.X;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 30;
-            this.iconPictureBox1.Location = new System.Drawing.Point(579, 13);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.iconPictureBox1.IconSize = 23;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1026, 11);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(31, 30);
+            this.iconPictureBox1.Size = new System.Drawing.Size(23, 24);
             this.iconPictureBox1.TabIndex = 19;
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // SubfamiliaModelo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1058, 724);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SubfamiliaModelo";
             this.Text = "SubfamiliaModelo";
             this.Load += new System.EventHandler(this.SubfamiliaModelo_Load);

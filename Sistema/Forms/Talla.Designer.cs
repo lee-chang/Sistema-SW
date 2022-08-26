@@ -43,9 +43,10 @@
             // 
             // btnbuscartalla
             // 
-            this.btnbuscartalla.Location = new System.Drawing.Point(528, 75);
+            this.btnbuscartalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscartalla.Location = new System.Drawing.Point(649, 61);
             this.btnbuscartalla.Name = "btnbuscartalla";
-            this.btnbuscartalla.Size = new System.Drawing.Size(115, 30);
+            this.btnbuscartalla.Size = new System.Drawing.Size(140, 58);
             this.btnbuscartalla.TabIndex = 49;
             this.btnbuscartalla.Text = "Buscar";
             this.btnbuscartalla.UseVisualStyleBackColor = true;
@@ -53,9 +54,10 @@
             // 
             // btnactualizartalla
             // 
-            this.btnactualizartalla.Location = new System.Drawing.Point(452, 394);
+            this.btnactualizartalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizartalla.Location = new System.Drawing.Point(578, 574);
             this.btnactualizartalla.Name = "btnactualizartalla";
-            this.btnactualizartalla.Size = new System.Drawing.Size(115, 30);
+            this.btnactualizartalla.Size = new System.Drawing.Size(142, 58);
             this.btnactualizartalla.TabIndex = 48;
             this.btnactualizartalla.Text = "Actualizar";
             this.btnactualizartalla.UseVisualStyleBackColor = true;
@@ -64,26 +66,29 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 103);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(242, 103);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.Size = new System.Drawing.Size(101, 16);
             this.label2.TabIndex = 47;
             this.label2.Text = "Numero Talla";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(149, 61);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(246, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.Size = new System.Drawing.Size(97, 16);
             this.label1.TabIndex = 46;
             this.label1.Text = "Codigo Talla";
             // 
             // btnregistrartalla
             // 
-            this.btnregistrartalla.Location = new System.Drawing.Point(248, 394);
+            this.btnregistrartalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrartalla.Location = new System.Drawing.Point(305, 574);
             this.btnregistrartalla.Name = "btnregistrartalla";
-            this.btnregistrartalla.Size = new System.Drawing.Size(115, 30);
+            this.btnregistrartalla.Size = new System.Drawing.Size(144, 58);
             this.btnregistrartalla.TabIndex = 45;
             this.btnregistrartalla.Text = "Registrar";
             this.btnregistrartalla.UseVisualStyleBackColor = true;
@@ -92,25 +97,27 @@
             // DGVColor
             // 
             this.DGVColor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVColor.Location = new System.Drawing.Point(148, 153);
+            this.DGVColor.Location = new System.Drawing.Point(249, 163);
             this.DGVColor.Name = "DGVColor";
             this.DGVColor.RowHeadersWidth = 51;
-            this.DGVColor.Size = new System.Drawing.Size(495, 213);
+            this.DGVColor.Size = new System.Drawing.Size(495, 382);
             this.DGVColor.TabIndex = 44;
             this.DGVColor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVColor_CellContentClick);
             // 
             // txtnumtalla
             // 
-            this.txtnumtalla.Location = new System.Drawing.Point(274, 103);
+            this.txtnumtalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnumtalla.Location = new System.Drawing.Point(371, 103);
             this.txtnumtalla.Name = "txtnumtalla";
-            this.txtnumtalla.Size = new System.Drawing.Size(224, 20);
+            this.txtnumtalla.Size = new System.Drawing.Size(224, 22);
             this.txtnumtalla.TabIndex = 43;
             // 
             // txttalla
             // 
-            this.txttalla.Location = new System.Drawing.Point(274, 60);
+            this.txttalla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttalla.Location = new System.Drawing.Point(371, 60);
             this.txttalla.Name = "txttalla";
-            this.txttalla.Size = new System.Drawing.Size(224, 20);
+            this.txttalla.Size = new System.Drawing.Size(224, 22);
             this.txttalla.TabIndex = 42;
             // 
             // iconCerrar
@@ -122,7 +129,7 @@
             this.iconCerrar.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCerrar.IconSize = 24;
-            this.iconCerrar.Location = new System.Drawing.Point(619, 14);
+            this.iconCerrar.Location = new System.Drawing.Point(44, 25);
             this.iconCerrar.Name = "iconCerrar";
             this.iconCerrar.Size = new System.Drawing.Size(24, 24);
             this.iconCerrar.TabIndex = 50;
@@ -132,7 +139,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1058, 724);
             this.Controls.Add(this.iconCerrar);
             this.Controls.Add(this.btnbuscartalla);
             this.Controls.Add(this.btnactualizartalla);
