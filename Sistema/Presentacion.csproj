@@ -66,6 +66,12 @@
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Color.Designer.cs">
+      <DependentUpon>Color.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Cotizar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,8 @@
     </Compile>
     <Compile Include="Forms\FCotizar.cs" />
     <Compile Include="Forms\FDetalleCotizar.cs" />
+    <Compile Include="Forms\FColor.cs" />
+    <Compile Include="Forms\FTalla.cs" />
     <Compile Include="Forms\FModelo.cs" />
     <Compile Include="Forms\FFamiliaModelo.cs" />
     <Compile Include="Forms\FPuntaModelo.cs" />
@@ -122,6 +130,12 @@
     <Compile Include="Forms\TacoModelo.Designer.cs">
       <DependentUpon>TacoModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Talla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Talla.Designer.cs">
+      <DependentUpon>Talla.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Color.resx">
+      <DependentUpon>Color.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cotizar.resx">
       <DependentUpon>Cotizar.cs</DependentUpon>
@@ -164,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TacoModelo.resx">
       <DependentUpon>TacoModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Talla.resx">
+      <DependentUpon>Talla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
