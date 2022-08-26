@@ -91,9 +91,9 @@
             this.panelContenedor.Controls.Add(this.panelBarraTitulo);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1778, 978);
+            this.panelContenedor.Size = new System.Drawing.Size(1334, 795);
             this.panelContenedor.TabIndex = 0;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
@@ -103,10 +103,9 @@
             this.panelChildForm.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panelChildForm.Controls.Add(this.pictureBox1);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(347, 39);
-            this.panelChildForm.Margin = new System.Windows.Forms.Padding(4);
+            this.panelChildForm.Location = new System.Drawing.Point(260, 32);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1431, 939);
+            this.panelChildForm.Size = new System.Drawing.Size(1074, 763);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
@@ -114,10 +113,9 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Sistema.Properties.Resources.favicon;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 314);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(431, 255);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(312, 281);
+            this.pictureBox1.Size = new System.Drawing.Size(234, 228);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -135,10 +133,10 @@
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 39);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelMenu.Location = new System.Drawing.Point(0, 32);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(347, 939);
+            this.panelMenu.Size = new System.Drawing.Size(260, 763);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -152,11 +150,11 @@
             this.BtnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnReportes.IconSize = 40;
             this.BtnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnReportes.Location = new System.Drawing.Point(3, 502);
-            this.BtnReportes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnReportes.Location = new System.Drawing.Point(2, 408);
+            this.BtnReportes.Margin = new System.Windows.Forms.Padding(2);
             this.BtnReportes.Name = "BtnReportes";
-            this.BtnReportes.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnReportes.Size = new System.Drawing.Size(344, 66);
+            this.BtnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnReportes.Size = new System.Drawing.Size(258, 54);
             this.BtnReportes.TabIndex = 12;
             this.BtnReportes.Text = "Reportes";
             this.BtnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,11 +171,11 @@
             this.BtnAlmacenProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnAlmacenProductos.IconSize = 40;
             this.BtnAlmacenProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAlmacenProductos.Location = new System.Drawing.Point(3, 288);
-            this.BtnAlmacenProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnAlmacenProductos.Location = new System.Drawing.Point(2, 234);
+            this.BtnAlmacenProductos.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlmacenProductos.Name = "BtnAlmacenProductos";
-            this.BtnAlmacenProductos.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnAlmacenProductos.Size = new System.Drawing.Size(344, 66);
+            this.BtnAlmacenProductos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnAlmacenProductos.Size = new System.Drawing.Size(258, 54);
             this.BtnAlmacenProductos.TabIndex = 10;
             this.BtnAlmacenProductos.Text = "Almacen Productos";
             this.BtnAlmacenProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,11 +192,11 @@
             this.BtnEnvios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnEnvios.IconSize = 40;
             this.BtnEnvios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEnvios.Location = new System.Drawing.Point(3, 431);
-            this.BtnEnvios.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnEnvios.Location = new System.Drawing.Point(2, 350);
+            this.BtnEnvios.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEnvios.Name = "BtnEnvios";
-            this.BtnEnvios.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnEnvios.Size = new System.Drawing.Size(344, 66);
+            this.BtnEnvios.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnEnvios.Size = new System.Drawing.Size(258, 54);
             this.BtnEnvios.TabIndex = 9;
             this.BtnEnvios.Text = "Envios";
             this.BtnEnvios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,11 +213,11 @@
             this.BtnProduccion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnProduccion.IconSize = 40;
             this.BtnProduccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnProduccion.Location = new System.Drawing.Point(3, 359);
-            this.BtnProduccion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnProduccion.Location = new System.Drawing.Point(2, 292);
+            this.BtnProduccion.Margin = new System.Windows.Forms.Padding(2);
             this.BtnProduccion.Name = "BtnProduccion";
-            this.BtnProduccion.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnProduccion.Size = new System.Drawing.Size(344, 66);
+            this.BtnProduccion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnProduccion.Size = new System.Drawing.Size(258, 54);
             this.BtnProduccion.TabIndex = 8;
             this.BtnProduccion.Text = "Produccion";
             this.BtnProduccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,11 +235,11 @@
             this.BtnPedidos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnPedidos.IconSize = 40;
             this.BtnPedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnPedidos.Location = new System.Drawing.Point(3, 145);
-            this.BtnPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnPedidos.Location = new System.Drawing.Point(2, 118);
+            this.BtnPedidos.Margin = new System.Windows.Forms.Padding(2);
             this.BtnPedidos.Name = "BtnPedidos";
-            this.BtnPedidos.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnPedidos.Size = new System.Drawing.Size(344, 66);
+            this.BtnPedidos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnPedidos.Size = new System.Drawing.Size(258, 54);
             this.BtnPedidos.TabIndex = 7;
             this.BtnPedidos.Text = "Pedidos";
             this.BtnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -259,11 +257,11 @@
             this.BtnAlmacenMat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnAlmacenMat.IconSize = 40;
             this.BtnAlmacenMat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAlmacenMat.Location = new System.Drawing.Point(3, 217);
-            this.BtnAlmacenMat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnAlmacenMat.Location = new System.Drawing.Point(2, 176);
+            this.BtnAlmacenMat.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAlmacenMat.Name = "BtnAlmacenMat";
-            this.BtnAlmacenMat.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.BtnAlmacenMat.Size = new System.Drawing.Size(344, 66);
+            this.BtnAlmacenMat.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnAlmacenMat.Size = new System.Drawing.Size(258, 54);
             this.BtnAlmacenMat.TabIndex = 6;
             this.BtnAlmacenMat.Text = "Almacen Materiales";
             this.BtnAlmacenMat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -275,10 +273,10 @@
             // 
             this.panel2.Controls.Add(this.iconBtnLogout);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 879);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 714);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(347, 60);
+            this.panel2.Size = new System.Drawing.Size(260, 49);
             this.panel2.TabIndex = 5;
             // 
             // iconBtnLogout
@@ -291,12 +289,12 @@
             this.iconBtnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconBtnLogout.IconSize = 35;
             this.iconBtnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnLogout.Location = new System.Drawing.Point(3, 2);
-            this.iconBtnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconBtnLogout.Location = new System.Drawing.Point(2, 2);
+            this.iconBtnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.iconBtnLogout.Name = "iconBtnLogout";
-            this.iconBtnLogout.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.iconBtnLogout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconBtnLogout.Rotation = 90D;
-            this.iconBtnLogout.Size = new System.Drawing.Size(344, 57);
+            this.iconBtnLogout.Size = new System.Drawing.Size(258, 46);
             this.iconBtnLogout.TabIndex = 11;
             this.iconBtnLogout.Text = "Cerrar Sesión";
             this.iconBtnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,9 +307,9 @@
             this.panel1.Controls.Add(this.iconPictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 140);
+            this.panel1.Size = new System.Drawing.Size(260, 114);
             this.panel1.TabIndex = 4;
             // 
             // iconPictureBox1
@@ -324,11 +322,11 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 140;
+            this.iconPictureBox1.IconSize = 114;
             this.iconPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(347, 140);
+            this.iconPictureBox1.Size = new System.Drawing.Size(260, 114);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
@@ -344,9 +342,9 @@
             this.panelBarraTitulo.Controls.Add(this.btnCerrar);
             this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
             this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1778, 39);
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1334, 32);
             this.panelBarraTitulo.TabIndex = 0;
             this.panelBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseMove);
             // 
@@ -358,8 +356,8 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(0);
             this.title.Name = "title";
-            this.title.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.title.Size = new System.Drawing.Size(368, 39);
+            this.title.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.title.Size = new System.Drawing.Size(276, 32);
             this.title.TabIndex = 4;
             this.title.Text = "SISTEMA DE GESTION ZICCA";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,10 +367,10 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1727, 11);
-            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRestaurar.Location = new System.Drawing.Point(1295, 9);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(16, 16);
+            this.btnRestaurar.Size = new System.Drawing.Size(12, 13);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
@@ -384,10 +382,10 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1706, 11);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimizar.Location = new System.Drawing.Point(1280, 9);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(16, 16);
+            this.btnMinimizar.Size = new System.Drawing.Size(12, 13);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 2;
             this.btnMinimizar.TabStop = false;
@@ -398,10 +396,10 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1727, 11);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMaximizar.Location = new System.Drawing.Point(1295, 9);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(16, 16);
+            this.btnMaximizar.Size = new System.Drawing.Size(12, 13);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 1;
             this.btnMaximizar.TabStop = false;
@@ -412,10 +410,10 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1749, 11);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCerrar.Location = new System.Drawing.Point(1312, 9);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(16, 16);
+            this.btnCerrar.Size = new System.Drawing.Size(12, 13);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
@@ -433,26 +431,26 @@
             this.MenuPedidos.MenuItemTextColor = System.Drawing.Color.Empty;
             this.MenuPedidos.Name = "MenuPedidos";
             this.MenuPedidos.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuPedidos.Size = new System.Drawing.Size(171, 76);
+            this.MenuPedidos.Size = new System.Drawing.Size(149, 70);
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // cotizarToolStripMenuItem
             // 
             this.cotizarToolStripMenuItem.Name = "cotizarToolStripMenuItem";
-            this.cotizarToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.cotizarToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.cotizarToolStripMenuItem.Text = "Cotizar";
             this.cotizarToolStripMenuItem.Click += new System.EventHandler(this.cotizarToolStripMenuItem_Click);
             // 
             // comprobanteToolStripMenuItem
             // 
             this.comprobanteToolStripMenuItem.Name = "comprobanteToolStripMenuItem";
-            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(170, 24);
+            this.comprobanteToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.comprobanteToolStripMenuItem.Text = "Comprobante";
             // 
             // MenuProduccion
@@ -465,7 +463,7 @@
             this.MenuProduccion.MenuItemTextColor = System.Drawing.Color.Empty;
             this.MenuProduccion.Name = "MenuProduccion";
             this.MenuProduccion.PrimaryColor = System.Drawing.Color.Empty;
-            this.MenuProduccion.Size = new System.Drawing.Size(211, 56);
+            this.MenuProduccion.Size = new System.Drawing.Size(181, 48);
             this.MenuProduccion.Opening += new System.ComponentModel.CancelEventHandler(this.MenuProduccion_Opening);
             // 
             // productoToolStripMenuItem
@@ -477,14 +475,14 @@
             this.coleccionToolStripMenuItem,
             this.colorToolStripMenuItem});
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.productoToolStripMenuItem.Text = "Productos";
             this.productoToolStripMenuItem.Click += new System.EventHandler(this.productoToolStripMenuItem_Click);
             // 
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo Producto";
             // 
             // modelosToolStripMenuItem
@@ -497,78 +495,80 @@
             this.tipoTacoToolStripMenuItem,
             this.hormaToolStripMenuItem});
             this.modelosToolStripMenuItem.Name = "modelosToolStripMenuItem";
-            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.modelosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modelosToolStripMenuItem.Text = "Modelos";
             // 
             // nuevoModeloToolStripMenuItem
             // 
             this.nuevoModeloToolStripMenuItem.Name = "nuevoModeloToolStripMenuItem";
-            this.nuevoModeloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nuevoModeloToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.nuevoModeloToolStripMenuItem.Text = "Nuevo Modelo";
             this.nuevoModeloToolStripMenuItem.Click += new System.EventHandler(this.nuevoModeloToolStripMenuItem_Click);
             // 
             // familiaModeloToolStripMenuItem
             // 
             this.familiaModeloToolStripMenuItem.Name = "familiaModeloToolStripMenuItem";
-            this.familiaModeloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.familiaModeloToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.familiaModeloToolStripMenuItem.Text = "Familia";
             this.familiaModeloToolStripMenuItem.Click += new System.EventHandler(this.familiaModeloToolStripMenuItem_Click);
             // 
             // subfamiliaToolStripMenuItem
             // 
             this.subfamiliaToolStripMenuItem.Name = "subfamiliaToolStripMenuItem";
-            this.subfamiliaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.subfamiliaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.subfamiliaToolStripMenuItem.Text = "Subfamilia";
             this.subfamiliaToolStripMenuItem.Click += new System.EventHandler(this.subfamiliaToolStripMenuItem_Click);
             // 
             // tipoPuntaToolStripMenuItem
             // 
             this.tipoPuntaToolStripMenuItem.Name = "tipoPuntaToolStripMenuItem";
-            this.tipoPuntaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipoPuntaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.tipoPuntaToolStripMenuItem.Text = "Tipo Punta";
             this.tipoPuntaToolStripMenuItem.Click += new System.EventHandler(this.tipoPuntaToolStripMenuItem_Click);
             // 
             // tipoTacoToolStripMenuItem
             // 
             this.tipoTacoToolStripMenuItem.Name = "tipoTacoToolStripMenuItem";
-            this.tipoTacoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipoTacoToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.tipoTacoToolStripMenuItem.Text = "Tipo Taco";
             this.tipoTacoToolStripMenuItem.Click += new System.EventHandler(this.tipoTacoToolStripMenuItem_Click);
             // 
             // hormaToolStripMenuItem
             // 
             this.hormaToolStripMenuItem.Name = "hormaToolStripMenuItem";
-            this.hormaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.hormaToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.hormaToolStripMenuItem.Text = "Horma";
             this.hormaToolStripMenuItem.Click += new System.EventHandler(this.hormaToolStripMenuItem_Click_1);
             // 
             // tallaToolStripMenuItem
             // 
             this.tallaToolStripMenuItem.Name = "tallaToolStripMenuItem";
-            this.tallaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tallaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tallaToolStripMenuItem.Text = "Talla";
+            this.tallaToolStripMenuItem.Click += new System.EventHandler(this.tallaToolStripMenuItem_Click);
             // 
             // coleccionToolStripMenuItem
             // 
             this.coleccionToolStripMenuItem.Name = "coleccionToolStripMenuItem";
-            this.coleccionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.coleccionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.coleccionToolStripMenuItem.Text = "Coleccion";
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1778, 978);
+            this.ClientSize = new System.Drawing.Size(1334, 795);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MinimumSize = new System.Drawing.Size(800, 492);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
