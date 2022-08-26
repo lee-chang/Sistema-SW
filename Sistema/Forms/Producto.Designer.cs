@@ -34,7 +34,7 @@
             this.DGVProducto = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textpventa = new System.Windows.Forms.TextBox();
+            this.txtpventa = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxTalla = new System.Windows.Forms.ComboBox();
             this.cbxMod = new System.Windows.Forms.ComboBox();
@@ -44,9 +44,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbxColec = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtdesprod = new System.Windows.Forms.TextBox();
+            this.txtDesProducto = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            this.txtidprod = new System.Windows.Forms.TextBox();
+            this.txtidProducto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProducto)).BeginInit();
@@ -79,6 +79,7 @@
             this.BtnActualizar.TabIndex = 16;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
+            this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // BtnRegistrar
             // 
@@ -90,6 +91,7 @@
             this.BtnRegistrar.TabIndex = 15;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // DGVProducto
             // 
@@ -104,7 +106,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textpventa);
+            this.groupBox1.Controls.Add(this.txtpventa);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.cbxTalla);
             this.groupBox1.Controls.Add(this.cbxMod);
@@ -114,7 +116,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbxColec);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtdesprod);
+            this.groupBox1.Controls.Add(this.txtDesProducto);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(22, 144);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -135,13 +137,13 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Precio Venta";
             // 
-            // textpventa
+            // txtpventa
             // 
-            this.textpventa.Location = new System.Drawing.Point(149, 94);
-            this.textpventa.Margin = new System.Windows.Forms.Padding(4);
-            this.textpventa.Name = "textpventa";
-            this.textpventa.Size = new System.Drawing.Size(160, 26);
-            this.textpventa.TabIndex = 16;
+            this.txtpventa.Location = new System.Drawing.Point(149, 94);
+            this.txtpventa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpventa.Name = "txtpventa";
+            this.txtpventa.Size = new System.Drawing.Size(160, 26);
+            this.txtpventa.TabIndex = 16;
             // 
             // label7
             // 
@@ -229,13 +231,13 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Descripcion";
             // 
-            // txtdesprod
+            // txtDesProducto
             // 
-            this.txtdesprod.Location = new System.Drawing.Point(149, 41);
-            this.txtdesprod.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdesprod.Name = "txtdesprod";
-            this.txtdesprod.Size = new System.Drawing.Size(416, 26);
-            this.txtdesprod.TabIndex = 4;
+            this.txtDesProducto.Location = new System.Drawing.Point(149, 41);
+            this.txtDesProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDesProducto.Name = "txtDesProducto";
+            this.txtDesProducto.Size = new System.Drawing.Size(416, 26);
+            this.txtDesProducto.TabIndex = 4;
             // 
             // BtnBuscar
             // 
@@ -249,14 +251,14 @@
             this.BtnBuscar.UseVisualStyleBackColor = true;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
-            // txtidprod
+            // txtidProducto
             // 
-            this.txtidprod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidprod.Location = new System.Drawing.Point(227, 88);
-            this.txtidprod.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidprod.Name = "txtidprod";
-            this.txtidprod.Size = new System.Drawing.Size(213, 26);
-            this.txtidprod.TabIndex = 11;
+            this.txtidProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidProducto.Location = new System.Drawing.Point(227, 88);
+            this.txtidProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtidProducto.Name = "txtidProducto";
+            this.txtidProducto.Size = new System.Drawing.Size(213, 26);
+            this.txtidProducto.TabIndex = 11;
             // 
             // label1
             // 
@@ -281,10 +283,11 @@
             this.Controls.Add(this.DGVProducto);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnBuscar);
-            this.Controls.Add(this.txtidprod);
+            this.Controls.Add(this.txtidProducto);
             this.Controls.Add(this.label1);
             this.Name = "Producto";
             this.Text = "Producto";
+            this.Load += new System.EventHandler(this.Producto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVProducto)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -310,11 +313,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbxColec;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtdesprod;
+        private System.Windows.Forms.TextBox txtDesProducto;
         private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.TextBox txtidprod;
+        private System.Windows.Forms.TextBox txtidProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textpventa;
+        private System.Windows.Forms.TextBox txtpventa;
     }
 }
