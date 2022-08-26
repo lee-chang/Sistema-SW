@@ -66,6 +66,12 @@
     <Compile Include="Forms\Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Coleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Coleccion.Designer.cs">
+      <DependentUpon>Coleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Color.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,7 @@
     <Compile Include="Forms\FCotizar.cs" />
     <Compile Include="Forms\FDetalleCotizar.cs" />
     <Compile Include="Forms\FColor.cs" />
+    <Compile Include="Forms\FColeccion.cs" />
     <Compile Include="Forms\FTalla.cs" />
     <Compile Include="Forms\FModelo.cs" />
     <Compile Include="Forms\FFamiliaModelo.cs" />
@@ -154,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Coleccion.resx">
+      <DependentUpon>Coleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Color.resx">
       <DependentUpon>Color.cs</DependentUpon>

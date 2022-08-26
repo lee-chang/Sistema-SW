@@ -552,6 +552,7 @@
             this.coleccionToolStripMenuItem.Name = "coleccionToolStripMenuItem";
             this.coleccionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.coleccionToolStripMenuItem.Text = "Coleccion";
+            this.coleccionToolStripMenuItem.Click += new System.EventHandler(this.coleccionToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 

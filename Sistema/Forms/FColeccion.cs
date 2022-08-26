@@ -10,47 +10,47 @@ using AccesoDatos;
 
 namespace Sistema.Forms
 {
-    internal class FTalla
+    internal class FColeccion
     {
         ConnectionToSql Cadenaconex= new ConnectionToSql();
 
-        private String idTalla, numTalla;
+        private String idCol, nomCol;
         private SqlConnection conn;
         private SqlCommand cmd;
-        public FTalla()
+        public FColeccion()
         {
             conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
-        public FTalla(String tid, String tnum)
+        public FColeccion(String tid, String tnom)
         {
-            this.idTalla = tid;
-            this.numTalla = tnum;
+            this.idCol = tid;
+            this.nomCol = tnom;
 
             conn = new SqlConnection(Cadenaconex.CadenaConexion);
         }
-        public String FidTalla
+        public String FidCol
         {
-            get { return this.idTalla; }
-            set { this.idTalla = value; }
+            get { return this.idCol; }
+            set { this.idCol = value; }
         }
 
-        public String FnumTalla
+        public String FnomCol
         {
-            get { return this.numTalla; }
-            set { this.numTalla = value; }
+            get { return this.nomCol; }
+            set { this.nomCol = value; }
         }
 
-        public void RegistrarTalla()
+        public void RegistrarCol()
         {
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_INSERTATALLA", conn)
+                cmd = new SqlCommand("SP_INSERTACOL", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.AddWithValue("@IDTALLA", idTalla);
-                cmd.Parameters.AddWithValue("@NUMTALLA", numTalla);
+                cmd.Parameters.AddWithValue("@IDCOL", idCol);
+                cmd.Parameters.AddWithValue("@NOMCOL", nomCol);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -63,15 +63,15 @@ namespace Sistema.Forms
             }
         }
 
-        public void ActualizarTalla()
+        public void ActualizarCol()
         {
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_ACTUALIZATALLA", conn);
+                cmd = new SqlCommand("SP_ACTUALIZACOL", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDTALLA", idTalla);
-                cmd.Parameters.AddWithValue("@NUMTALLA", numTalla);
+                cmd.Parameters.AddWithValue("@IDCOL", idCol);
+                cmd.Parameters.AddWithValue("@NOMCOL", nomCol);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -84,26 +84,26 @@ namespace Sistema.Forms
             }
         }
 
-        public void BuscarTalla()
+        public void BuscarCol()
         {
             try
             {
                 SqlDataReader dr;
                 conn.Open();
-                cmd = new SqlCommand("SP_BUSCATALLA", conn);
+                cmd = new SqlCommand("SP_BUSCACOL", conn);
 
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDTALLA", idTalla);
+                cmd.Parameters.AddWithValue("@IDCOL", idCol);
 
                 dr = cmd.ExecuteReader();
                 if (!dr.HasRows)
                 {
-                    MessageBox.Show("Talla no Registrada !!");
+                    MessageBox.Show("Coleccion no Registrada !!");
                 }
                 while (dr.Read())
                 {
-                    idTalla = dr.GetString(1);
-                    numTalla = dr.GetString(0);
+                    idCol = dr.GetString(1);
+                    nomCol = dr.GetString(0);
                 }
 
             }
@@ -117,14 +117,14 @@ namespace Sistema.Forms
             }
         }
 
-        public DataTable ListarTalla()
+        public DataTable ListarCol()
         {
             try
             {
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter();
                 conn.Open();
-                cmd = new SqlCommand("SP_LISTATALLA", conn);
+                cmd = new SqlCommand("SP_LISTACOL", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 da = new SqlDataAdapter(cmd);
                 da.Fill(ds);
