@@ -94,6 +94,7 @@
     <Compile Include="Forms\FDetalleCotizar.cs" />
     <Compile Include="Forms\FColor.cs" />
     <Compile Include="Forms\FColeccion.cs" />
+    <Compile Include="Forms\FProducto.cs" />
     <Compile Include="Forms\FTalla.cs" />
     <Compile Include="Forms\FModelo.cs" />
     <Compile Include="Forms\FFamiliaModelo.cs" />

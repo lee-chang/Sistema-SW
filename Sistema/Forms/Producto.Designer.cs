@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.DGVModelo = new System.Windows.Forms.DataGridView();
+            this.BtnActualizar = new System.Windows.Forms.Button();
+            this.BtnRegistrar = new System.Windows.Forms.Button();
+            this.DGVProducto = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textpventa = new System.Windows.Forms.TextBox();
@@ -45,11 +45,11 @@
             this.cbxColec = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtdesprod = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnBuscar = new System.Windows.Forms.Button();
             this.txtidprod = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVModelo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVProducto)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,37 +69,37 @@
             this.iconPictureBox1.TabIndex = 17;
             this.iconPictureBox1.TabStop = false;
             // 
-            // button3
+            // BtnActualizar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(423, 488);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 28);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.Location = new System.Drawing.Point(423, 488);
+            this.BtnActualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnActualizar.Name = "BtnActualizar";
+            this.BtnActualizar.Size = new System.Drawing.Size(100, 28);
+            this.BtnActualizar.TabIndex = 16;
+            this.BtnActualizar.Text = "Actualizar";
+            this.BtnActualizar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnRegistrar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(231, 488);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.Location = new System.Drawing.Point(231, 488);
+            this.BtnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnRegistrar.Name = "BtnRegistrar";
+            this.BtnRegistrar.Size = new System.Drawing.Size(100, 28);
+            this.BtnRegistrar.TabIndex = 15;
+            this.BtnRegistrar.Text = "Registrar";
+            this.BtnRegistrar.UseVisualStyleBackColor = true;
             // 
-            // DGVModelo
+            // DGVProducto
             // 
-            this.DGVModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVModelo.Location = new System.Drawing.Point(660, 108);
-            this.DGVModelo.Margin = new System.Windows.Forms.Padding(4);
-            this.DGVModelo.Name = "DGVModelo";
-            this.DGVModelo.RowHeadersWidth = 51;
-            this.DGVModelo.Size = new System.Drawing.Size(612, 347);
-            this.DGVModelo.TabIndex = 14;
+            this.DGVProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVProducto.Location = new System.Drawing.Point(660, 108);
+            this.DGVProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.DGVProducto.Name = "DGVProducto";
+            this.DGVProducto.RowHeadersWidth = 51;
+            this.DGVProducto.Size = new System.Drawing.Size(612, 347);
+            this.DGVProducto.TabIndex = 14;
             // 
             // groupBox1
             // 
@@ -237,16 +237,17 @@
             this.txtdesprod.Size = new System.Drawing.Size(416, 26);
             this.txtdesprod.TabIndex = 4;
             // 
-            // button1
+            // BtnBuscar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(509, 86);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.Location = new System.Drawing.Point(509, 86);
+            this.BtnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(100, 28);
+            this.BtnBuscar.TabIndex = 12;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // txtidprod
             // 
@@ -275,17 +276,17 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(1314, 551);
             this.Controls.Add(this.iconPictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.DGVModelo);
+            this.Controls.Add(this.BtnActualizar);
+            this.Controls.Add(this.BtnRegistrar);
+            this.Controls.Add(this.DGVProducto);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.txtidprod);
             this.Controls.Add(this.label1);
             this.Name = "Producto";
             this.Text = "Producto";
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DGVModelo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVProducto)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -296,9 +297,9 @@
         #endregion
 
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView DGVModelo;
+        private System.Windows.Forms.Button BtnActualizar;
+        private System.Windows.Forms.Button BtnRegistrar;
+        private System.Windows.Forms.DataGridView DGVProducto;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbxTalla;
@@ -310,7 +311,7 @@
         private System.Windows.Forms.ComboBox cbxColec;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtdesprod;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox txtidprod;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
