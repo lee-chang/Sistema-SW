@@ -43,36 +43,36 @@
             // 
             // txthorma
             // 
-            this.txthorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txthorma.Location = new System.Drawing.Point(307, 63);
+            this.txthorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txthorma.Location = new System.Drawing.Point(326, 120);
             this.txthorma.Name = "txthorma";
-            this.txthorma.Size = new System.Drawing.Size(400, 26);
+            this.txthorma.Size = new System.Drawing.Size(400, 22);
             this.txthorma.TabIndex = 0;
             this.txthorma.TextChanged += new System.EventHandler(this.txthorma_TextChanged);
             // 
             // txtdeshorma
             // 
-            this.txtdeshorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdeshorma.Location = new System.Drawing.Point(307, 106);
+            this.txtdeshorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdeshorma.Location = new System.Drawing.Point(326, 163);
             this.txtdeshorma.Name = "txtdeshorma";
-            this.txtdeshorma.Size = new System.Drawing.Size(400, 26);
+            this.txtdeshorma.Size = new System.Drawing.Size(400, 22);
             this.txtdeshorma.TabIndex = 1;
             this.txtdeshorma.TextChanged += new System.EventHandler(this.txtdeshorma_TextChanged);
             // 
             // DGVHorma
             // 
             this.DGVHorma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVHorma.Location = new System.Drawing.Point(36, 153);
+            this.DGVHorma.Location = new System.Drawing.Point(93, 233);
             this.DGVHorma.Name = "DGVHorma";
             this.DGVHorma.RowHeadersWidth = 51;
-            this.DGVHorma.Size = new System.Drawing.Size(907, 213);
+            this.DGVHorma.Size = new System.Drawing.Size(835, 249);
             this.DGVHorma.TabIndex = 2;
             this.DGVHorma.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVHorma_CellContentClick);
             // 
             // RegistrarHorma
             // 
-            this.RegistrarHorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrarHorma.Location = new System.Drawing.Point(366, 421);
+            this.RegistrarHorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegistrarHorma.Location = new System.Drawing.Point(276, 534);
             this.RegistrarHorma.Name = "RegistrarHorma";
             this.RegistrarHorma.Size = new System.Drawing.Size(123, 57);
             this.RegistrarHorma.TabIndex = 3;
@@ -83,10 +83,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 63);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.Size = new System.Drawing.Size(107, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Codigo Horma";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -94,18 +94,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 109);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(52, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 20);
+            this.label2.Size = new System.Drawing.Size(140, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Descripcion Horma";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnactualizarhorma
             // 
-            this.btnactualizarhorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnactualizarhorma.Location = new System.Drawing.Point(570, 421);
+            this.btnactualizarhorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnactualizarhorma.Location = new System.Drawing.Point(660, 534);
             this.btnactualizarhorma.Name = "btnactualizarhorma";
             this.btnactualizarhorma.Size = new System.Drawing.Size(123, 57);
             this.btnactualizarhorma.TabIndex = 6;
@@ -115,8 +115,8 @@
             // 
             // btnbuscarhorma
             // 
-            this.btnbuscarhorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscarhorma.Location = new System.Drawing.Point(820, 63);
+            this.btnbuscarhorma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscarhorma.Location = new System.Drawing.Point(839, 120);
             this.btnbuscarhorma.Name = "btnbuscarhorma";
             this.btnbuscarhorma.Size = new System.Drawing.Size(123, 57);
             this.btnbuscarhorma.TabIndex = 7;
@@ -143,7 +143,7 @@
             // Horma
             // 
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1414, 892);
+            this.ClientSize = new System.Drawing.Size(1058, 724);
             this.Controls.Add(this.iconCerrar);
             this.Controls.Add(this.btnbuscarhorma);
             this.Controls.Add(this.btnactualizarhorma);

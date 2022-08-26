@@ -70,10 +70,10 @@
             // 
             // BtnActualizar
             // 
-            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnActualizar.Location = new System.Drawing.Point(317, 396);
+            this.BtnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActualizar.Location = new System.Drawing.Point(537, 586);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.BtnActualizar.Size = new System.Drawing.Size(135, 55);
             this.BtnActualizar.TabIndex = 16;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.UseVisualStyleBackColor = true;
@@ -81,10 +81,10 @@
             // 
             // BtnRegistrar
             // 
-            this.BtnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnRegistrar.Location = new System.Drawing.Point(173, 396);
+            this.BtnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRegistrar.Location = new System.Drawing.Point(253, 586);
             this.BtnRegistrar.Name = "BtnRegistrar";
-            this.BtnRegistrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnRegistrar.Size = new System.Drawing.Size(135, 55);
             this.BtnRegistrar.TabIndex = 15;
             this.BtnRegistrar.Text = "Registrar";
             this.BtnRegistrar.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@
             // DGVProducto
             // 
             this.DGVProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVProducto.Location = new System.Drawing.Point(495, 88);
+            this.DGVProducto.Location = new System.Drawing.Point(520, 106);
             this.DGVProducto.Name = "DGVProducto";
             this.DGVProducto.RowHeadersWidth = 51;
-            this.DGVProducto.Size = new System.Drawing.Size(459, 282);
+            this.DGVProducto.Size = new System.Drawing.Size(459, 415);
             this.DGVProducto.TabIndex = 14;
             // 
             // groupBox1
@@ -113,10 +113,10 @@
             this.groupBox1.Controls.Add(this.cbxColec);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtDesProducto);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(16, 117);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(16, 167);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(436, 253);
+            this.groupBox1.Size = new System.Drawing.Size(469, 354);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
@@ -124,109 +124,109 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 80);
+            this.label5.Location = new System.Drawing.Point(45, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 17);
+            this.label5.Size = new System.Drawing.Size(96, 16);
             this.label5.TabIndex = 15;
             this.label5.Text = "Precio Venta";
             // 
             // txtpventa
             // 
-            this.txtpventa.Location = new System.Drawing.Point(112, 76);
+            this.txtpventa.Location = new System.Drawing.Point(169, 118);
             this.txtpventa.Name = "txtpventa";
-            this.txtpventa.Size = new System.Drawing.Size(121, 23);
+            this.txtpventa.Size = new System.Drawing.Size(103, 22);
             this.txtpventa.TabIndex = 16;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(266, 78);
+            this.label7.Location = new System.Drawing.Point(294, 121);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 17);
+            this.label7.Size = new System.Drawing.Size(43, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Talla";
             // 
             // cbxTalla
             // 
             this.cbxTalla.FormattingEnabled = true;
-            this.cbxTalla.Location = new System.Drawing.Point(314, 75);
+            this.cbxTalla.Location = new System.Drawing.Point(343, 118);
             this.cbxTalla.Name = "cbxTalla";
-            this.cbxTalla.Size = new System.Drawing.Size(110, 24);
+            this.cbxTalla.Size = new System.Drawing.Size(73, 24);
             this.cbxTalla.TabIndex = 13;
             // 
             // cbxMod
             // 
             this.cbxMod.FormattingEnabled = true;
-            this.cbxMod.Location = new System.Drawing.Point(112, 211);
+            this.cbxMod.Location = new System.Drawing.Point(176, 301);
             this.cbxMod.Name = "cbxMod";
-            this.cbxMod.Size = new System.Drawing.Size(313, 24);
+            this.cbxMod.Size = new System.Drawing.Size(243, 24);
             this.cbxMod.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 214);
+            this.label6.Location = new System.Drawing.Point(64, 304);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 17);
+            this.label6.Size = new System.Drawing.Size(59, 16);
             this.label6.TabIndex = 11;
             this.label6.Text = "Modelo";
             // 
             // cbxColor
             // 
             this.cbxColor.FormattingEnabled = true;
-            this.cbxColor.Location = new System.Drawing.Point(112, 169);
+            this.cbxColor.Location = new System.Drawing.Point(173, 242);
             this.cbxColor.Name = "cbxColor";
-            this.cbxColor.Size = new System.Drawing.Size(313, 24);
+            this.cbxColor.Size = new System.Drawing.Size(243, 24);
             this.cbxColor.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 172);
+            this.label4.Location = new System.Drawing.Point(79, 245);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 17);
+            this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Color";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 127);
+            this.label3.Location = new System.Drawing.Point(64, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Coleccion";
             // 
             // cbxColec
             // 
             this.cbxColec.FormattingEnabled = true;
-            this.cbxColec.Location = new System.Drawing.Point(112, 124);
+            this.cbxColec.Location = new System.Drawing.Point(173, 180);
             this.cbxColec.Name = "cbxColec";
-            this.cbxColec.Size = new System.Drawing.Size(313, 24);
+            this.cbxColec.Size = new System.Drawing.Size(243, 24);
             this.cbxColec.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 37);
+            this.label2.Location = new System.Drawing.Point(51, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.Size = new System.Drawing.Size(90, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Descripcion";
             // 
             // txtDesProducto
             // 
-            this.txtDesProducto.Location = new System.Drawing.Point(112, 33);
+            this.txtDesProducto.Location = new System.Drawing.Point(169, 63);
             this.txtDesProducto.Name = "txtDesProducto";
-            this.txtDesProducto.Size = new System.Drawing.Size(313, 23);
+            this.txtDesProducto.Size = new System.Drawing.Size(245, 22);
             this.txtDesProducto.TabIndex = 4;
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.Location = new System.Drawing.Point(382, 70);
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.Location = new System.Drawing.Point(381, 81);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.BtnBuscar.Size = new System.Drawing.Size(104, 45);
             this.BtnBuscar.TabIndex = 12;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
@@ -234,20 +234,20 @@
             // 
             // txtidProducto
             // 
-            this.txtidProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidProducto.Location = new System.Drawing.Point(170, 72);
+            this.txtidProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidProducto.Location = new System.Drawing.Point(169, 94);
             this.txtidProducto.Name = "txtidProducto";
-            this.txtidProducto.Size = new System.Drawing.Size(161, 23);
+            this.txtidProducto.Size = new System.Drawing.Size(190, 22);
             this.txtidProducto.TabIndex = 11;
             this.txtidProducto.TextChanged += new System.EventHandler(this.txtidProducto_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 73);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 17);
+            this.label1.Size = new System.Drawing.Size(123, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Codigo Producto";
             // 
@@ -256,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(986, 448);
+            this.ClientSize = new System.Drawing.Size(1058, 724);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.BtnActualizar);
             this.Controls.Add(this.BtnRegistrar);
@@ -265,7 +265,7 @@
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.txtidProducto);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Producto";
             this.Text = "Producto";
             this.Load += new System.EventHandler(this.Producto_Load);
