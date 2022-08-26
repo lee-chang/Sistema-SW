@@ -268,6 +268,11 @@ MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
         {
             OpenChildForm(new Sistema.Forms.Coleccion());
         }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Sistema.Forms.Producto());
+        }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private Form activeForm = null;

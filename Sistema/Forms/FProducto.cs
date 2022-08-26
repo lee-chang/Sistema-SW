@@ -80,7 +80,7 @@ namespace Sistema.Forms
             try
             {
                 conn.Open();
-                cmd = new SqlCommand("SP_INSERTAPRODUCTO", conn);
+                cmd = new SqlCommand("SP_REGISTRARPRODUCTO", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@IDPRODUCTO", idProducto);
                 cmd.Parameters.AddWithValue("@DESPRODUCTO", desProducto);

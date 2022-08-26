@@ -27,10 +27,12 @@ namespace Sistema.Forms
         {
             try
             {
+                FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.BuscarProducto();
                 txtDesProducto.Text = objFProducto.FdesProducto;
-                txtpventa.Text = objFProducto.FPrecioventa;
+                string a = Convert.ToString(objFProducto.FPrecioventa);
+                txtpventa.Text = a;
                 cbxTalla.SelectedValue = objFProducto.FidTalla;
                 cbxColec.SelectedValue = objFProducto.FidColeccion;
                 cbxColor.SelectedValue = objFProducto.FidColor;
@@ -133,7 +135,8 @@ namespace Sistema.Forms
                 FProducto objFProducto = new FProducto();
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.FdesProducto = txtDesProducto.Text;
-
+                int b = Convert.ToInt32(txtpventa.Text);
+                objFProducto.FPrecioventa = b;
                 objFProducto.FidTalla = cbxTalla.SelectedValue.ToString();
                 objFProducto.FidColeccion = cbxColec.SelectedValue.ToString();
                 objFProducto.FidColor = cbxColor.SelectedValue.ToString();
