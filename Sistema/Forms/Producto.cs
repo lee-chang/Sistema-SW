@@ -30,10 +30,9 @@ namespace Sistema.Forms
                 objFProducto.FidProducto = txtidProducto.Text;
                 objFProducto.BuscarProducto();
                 txtDesProducto.Text = objFProducto.FdesProducto;
-                float pven = objFProducto.FPrecioventa;
-                string pventa;
-                pventa = pven.ToString();
-                txtpventa.Text = pventa;
+
+                float precio = objFProducto.FPrecioventa;
+                txtpventa.Text =precio.ToString();     
                 cbxTalla.SelectedValue = objFProducto.FidTalla;
                 cbxColec.SelectedValue = objFProducto.FidColeccion;
                 cbxColor.SelectedValue = objFProducto.FidColor;
@@ -88,10 +87,8 @@ namespace Sistema.Forms
         public void CargarColor()
         {
             cbxColor.DataSource = objFColor.ListarColor();
-            cbxColor.ValueMember = "ColorID";
             cbxColor.DisplayMember = "NombColor";
-            
-            
+            cbxColor.ValueMember = "ColorID";              
         }
 
         public void CargarModelo()

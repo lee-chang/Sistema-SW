@@ -148,7 +148,7 @@ namespace Sistema.Forms
                 {
                     idProducto = dr.GetString(0);
                     desProducto = dr.GetString(1);
-                    Precioventa = dr.GetFloat(2);
+                    float Precioventa = dr.GetFloat(2);
                     idColeccion = dr.GetString(3);
                     idModelo = dr.GetString(4);
                     idColor = dr.GetString(5);
