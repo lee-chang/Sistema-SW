@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio
+/*namespace Dominio
 {
     public class NCotizar
     {
 
         DCotizar ncot = new DCotizar();
-        
+
         //listar
         public int insertaCotiacion(ECotizar ecot)
         {
@@ -19,4 +19,4 @@ namespace Dominio
         }
     }
 }
-}
+*/

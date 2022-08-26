@@ -53,7 +53,7 @@ namespace Sistema.Forms
             }
             catch (Exception ex)
             {
-
+                throw new Exception(ex.Message);
             }
         }
 

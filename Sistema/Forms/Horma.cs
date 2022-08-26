@@ -105,5 +105,25 @@ namespace Sistema.Forms
         {
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtdeshorma_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txthorma_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

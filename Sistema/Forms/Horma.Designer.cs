@@ -45,15 +45,17 @@
             // 
             this.txthorma.Location = new System.Drawing.Point(163, 56);
             this.txthorma.Name = "txthorma";
-            this.txthorma.Size = new System.Drawing.Size(224, 22);
+            this.txthorma.Size = new System.Drawing.Size(224, 20);
             this.txthorma.TabIndex = 0;
+            this.txthorma.TextChanged += new System.EventHandler(this.txthorma_TextChanged);
             // 
             // txtdeshorma
             // 
             this.txtdeshorma.Location = new System.Drawing.Point(163, 99);
             this.txtdeshorma.Name = "txtdeshorma";
-            this.txtdeshorma.Size = new System.Drawing.Size(224, 22);
+            this.txtdeshorma.Size = new System.Drawing.Size(224, 20);
             this.txtdeshorma.TabIndex = 1;
+            this.txtdeshorma.TextChanged += new System.EventHandler(this.txtdeshorma_TextChanged);
             // 
             // DGVHorma
             // 
@@ -80,18 +82,20 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(34, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(74, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Codigo Horma";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(34, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 16);
+            this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Descripcion Horma";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnactualizarhorma
             // 
