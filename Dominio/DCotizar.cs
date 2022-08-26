@@ -26,6 +26,31 @@ namespace Dominio
         public SqlDataAdapter da;
 
         //METODO INSERTAR COTIZACION
+        public void insertaCotizacion(ECotizar ecot)
+        {
+            try
+            {
+                conexion.Open();
+                cmd = new SqlCommand("SP_INSERTACOTIZACION", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PCOTIZACIONID", ecot.Cotid);
+                cmd.Parameters.AddWithValue("@PFECHA", ecot.Fechaop);
+                cmd.Parameters.AddWithValue("@PTOTALITEMS", ecot.Clieid);
+                cmd.Parameters.AddWithValue("@PPRECIOTOTAL", ecot.Totalit);
+                cmd.Parameters.AddWithValue("@PCLIENTEID", ecot.Precioto);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
+
+
     }
 
 }

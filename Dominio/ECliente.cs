@@ -65,28 +65,14 @@ namespace Dominio
 
         public string Provid
         {
-            get
-            {
-                return provid;
-            }
-
-            set
-            {
-                provid = value;
-            }
+            get  { return provid;}
+            set  { provid = value;}
         }
         
         public string Depid
         {
-            get
-            {
-                return depid;
-            }
-
-            set
-            {
-                depid = value;
-            }
+            get { return depid; }
+            set { depid = value; }
         }
 
     }

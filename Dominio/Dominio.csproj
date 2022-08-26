@@ -65,14 +65,17 @@
     <Compile Include="DCotizar.cs" />
     <Compile Include="DDepartamento.cs" />
     <Compile Include="DDistrito.cs" />
+    <Compile Include="DProducto.cs" />
     <Compile Include="DProvincia.cs" />
     <Compile Include="DTipoIden.cs" />
     <Compile Include="ECliente.cs" />
+    <Compile Include="ECotizar.cs" />
     <Compile Include="EDepartamento.cs" />
     <Compile Include="EDistrito.cs" />
     <Compile Include="EProvincia.cs" />
     <Compile Include="ETipoIden.cs" />
     <Compile Include="NCliente.cs" />
+    <Compile Include="NCotizar.cs" />
     <Compile Include="NDepartamento.cs" />
     <Compile Include="NDistrito.cs" />
     <Compile Include="NProvincia.cs" />

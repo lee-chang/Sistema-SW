@@ -78,6 +78,8 @@
     <Compile Include="Forms\FamiliaModelo.Designer.cs">
       <DependentUpon>FamiliaModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FCotizar.cs" />
+    <Compile Include="Forms\FDetalleCotizar.cs" />
     <Compile Include="Forms\FModelo.cs" />
     <Compile Include="Forms\FFamiliaModelo.cs" />
     <Compile Include="Forms\FPuntaModelo.cs" />
@@ -95,6 +97,12 @@
     </Compile>
     <Compile Include="Forms\Modelo.Designer.cs">
       <DependentUpon>Modelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Producto.Designer.cs">
+      <DependentUpon>Producto.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PuntaModelo.cs">
       <SubType>Form</SubType>
@@ -144,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modelo.resx">
       <DependentUpon>Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Producto.resx">
+      <DependentUpon>Producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PuntaModelo.resx">
       <DependentUpon>PuntaModelo.cs</DependentUpon>
